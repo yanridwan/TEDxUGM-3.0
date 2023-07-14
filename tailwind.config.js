@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+const path = require('path');
+
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,11 +9,19 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'navbar-pattern': `url('${path.resolve(
+          __dirname,
+          '/images/background-pattern.png'
+        )}')`,
+      },
+      colors: {
+        'c-red': '#FF2C07',
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
       },
     },
   },
+  variants: {},
   plugins: [],
-}
+};
