@@ -8,7 +8,7 @@ import IG from 'public/images/ig-logo.png';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="absolute bottom-0 w-full bg-black text-white">
+    <footer className="absolute bottom-0 w-full bg-/ text-white">
       <div className='w-full flex flex-col lg:flex-row lg:items-center px-6 gap-8 sm:px-20 lg:py-8 lg:px-12 lg:gap-12 lg:justify-evenly xl:py-14'>
         <Image src={TEDxLogo} alt="" className="w-[200px] h-auto mt-12 lg:mt-0 md:w-1/3 lg:w-[25%]" />
         <div className="flex gap-12 justify-around sm:justify-start px-2 sm:gap-20 lg:gap-8">
@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
                 <div className="flex flex-col gap-2 lg:gap-4">
                   <Link
                     href="#"
-                    className="text-white/60 hover:text-white text- lg:text-xl sm:text-base"
+                    className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
                   >
                     Pre-Event 4.0
                   </Link>

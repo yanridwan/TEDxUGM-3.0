@@ -4,6 +4,8 @@ import SmallLogo from 'public/images/logo-small.png';
 import DropdownIcon from 'public/images/navbar-dropdown-icon.svg';
 import Image from 'next/image';
 import Link from 'next/link';
+import backgroundPattern from 'public/images/background-pattern.png';
+import Button from '../Button/Button';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -23,8 +25,12 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="font-bold text-xs lg:text-sm shadow-md">
-      <div className="px-10 py-4 flex justify-between bg-[navbar-pattern]">
+    <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full ">
+      <div className="px-10 py-4 flex justify-between bg-[navbar-pattern]"
+      style={{
+        backgroundImage: `url('${backgroundPattern}')`,
+      }}>
+
         <Link href="/">
           <Image
             src={SmallLogo}
@@ -84,13 +90,13 @@ const Navbar: React.FC = () => {
               )}
             </li>
             <li className="flex justify-center">
-              <a href="#">MAIN EVENTS</a>
+              <a className='hover:text-c-red transition-all' href="#" >MAIN EVENTS</a>
             </li>
             <li>
-              <a href="#">MERCHANDISE</a>
+              <a className='hover:text-c-red transition-all' href="#">MERCHANDISE</a>
             </li>
             <li>
-              <a href="#">SPONSORSHIP</a>
+              <a className='hover:text-c-red transition-all' href="#">SPONSORSHIP</a>
             </li>
             <li className="flex items-center" onClick={toggleAbout}>
               <a
@@ -117,7 +123,13 @@ const Navbar: React.FC = () => {
                 </div>
               )}
             </li>
-            <li>Sign up button</li>
+            <li>
+              <Button
+                variant="primary"
+                text="SIGN IN"
+                className='md:w-24 lg:w-40'
+              />
+            </li>
           </ul>
         </div>
       </div>
@@ -125,14 +137,14 @@ const Navbar: React.FC = () => {
       <div
         className={`${
           isOpen ? 'absolute' : 'hidden'
-        } md:hidden bg-slate-300 transition-all duration-500 ease-in-out`}
+        } md:hidden bg-black/80 transition-all duration-300 ease-in-out`}
         style={{ maxHeight: isOpen ? '1000px' : '0', width: '100%' }}
       >
-        <div className="flex items-center justify-center text-center py-4">
-          <ul className="flex flex-col md:flex-row gap-4">
+        <div className="flex items-center justify-center text-center py-4 text-white">
+          <ul className="flex flex-col md:flex-row gap-4 text-base font-normal">
             <div className="">
               <li>
-                <a href="#">PRE-EVENTS</a>
+                <a className='hover:text-c-red transition-all' href="#">PRE-EVENTS</a>
               </li>
               <svg
                 width="21"
@@ -162,18 +174,18 @@ const Navbar: React.FC = () => {
               </svg>
             </div>
             <li className="flex justify-center">
-              <a href="#">MAIN EVENTS</a>
-            <hr className="border-t border-black border-[0.5px] border-b-0" />
+              <a className='hover:text-c-red transition-all' href="#">MAIN EVENTS</a>
+              <hr className="border-t border-black border-[0.5px] border-b-0" />
             </li>
 
             <li>
-              <a href="#">MERCHANDISE</a>
+              <a className='hover:text-c-red transition-all' href="#">MERCHANDISE</a>
             </li>
             <li>
-              <a href="#">SPONSORSHIP</a>
+              <a className='hover:text-c-red transition-all' href="#">SPONSORSHIP</a>
             </li>
             <li>
-              <a href="#">ABOUT US</a>
+              <a className='hover:text-c-red transition-all' href="#">ABOUT US</a>
             </li>
           </ul>
         </div>
