@@ -1,0 +1,26 @@
+<svg
+    width="18"
+    height="10"
+    viewBox="0 0 21 13"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="hidden md:flex"
+    >
+        <mask
+        id="mask0_234_15153"
+        style={{ maskType: 'luminance' }}
+        maskUnits="userSpaceOnUse"
+        x="0"
+        y="0"
+        width="21"
+        height="13"
+        >
+        <path d="M0 0H20.625V12.7708H0V0Z" fill="white" />
+        </mask>
+        <g mask="url(#mask0_234_15153)">
+        <path
+            d="M18.1927 -2L10.3125 5.80729L2.43229 -2L0 0.406251L10.3125 10.6302L20.625 0.406251L18.1927 -2Z"
+            fill="#FF2C07"
+        />
+        </g>
+</svg>
