@@ -10,12 +10,12 @@ interface IUser extends Document {
 }
 
 const UserSchema = new mongoose.Schema<IUser>({
-  name: { type: String, required: true },
+  name: { type: String },
   email: { type: String, required: true, unique: true },
-  password: { type: String, required: true },
-  job: { type: String, required: true },
-  university: { type: String, required: true },
-  major: { type: String, required: true },
+  password: { type: String },
+  job: { type: String},
+  university: { type: String },
+  major: { type: String },
 });
 
 export default mongoose.models.User || mongoose.model<IUser>('User', UserSchema);
