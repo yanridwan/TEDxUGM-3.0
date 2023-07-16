@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
       data: userData
     });
 
-    return NextResponse.json(user);
+    return NextResponse.json({ message: "User created", user});
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, {status: 400});
   }
