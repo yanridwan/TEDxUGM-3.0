@@ -43,14 +43,32 @@ export const authConfig: NextAuthOptions = {
       },
     }),
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID as string,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
+      clientId: process.env.GOOGLE_CLIENT_ID || "",
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
+      authorization: {
+        params: {
+          prompt: "consent",
+          access_type: "offline",
+          response_type: "code",
+        },
+      },
     }),
   ],
   secret: process.env.NEXTAUTH_SECRET as string,
   session: {
     strategy: "jwt",
   },
+  callbacks: {
+    // async session({ session, token }) {
+    //   session.user = token.user;
+    //   return session;
+    // },
+    // async jwt({ token, user }) {
+    //   if (user) {
+    //     token.user = user;
+    //   }
+    //   return token;
+    // },
+  },
   debug: process.env.NODE_ENV === "development",
 };
-
