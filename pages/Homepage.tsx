@@ -12,12 +12,11 @@ import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/css';
 
-
 const Homepage: React.FC = () => {
   return (
     <div>
       <HeroSection />
-      <div className="mx-8 md:mx-16">
+      <div className="mx-8 md:mx-16 mt-20">
         <CarouselSection />
         <ViewEventSection />
       </div>
@@ -30,7 +29,7 @@ export default Homepage;
 const HeroSection: React.FC = () => {
   return (
     <div className="w-full h-screen  text-white relative">
-      <HeroCarousel />     
+      <HeroCarousel />
 
       <div className="absolute inset-0 flex items-center justify-center px-8 w-fuo">
         <div className="absolute inset-0 bg-black opacity-30 z-20"></div>
@@ -64,7 +63,11 @@ const HeroSection: React.FC = () => {
 };
 
 const CarouselSection: React.FC = () => {
-  return <div className="w-full h-[72vh] bg-slate-100"></div>;
+  return (
+    <div className="w-full h-full bg-slate-100">
+      <Carousel />
+    </div>
+  );
 };
 
 const ViewEventSection: React.FC = () => {
@@ -79,7 +82,7 @@ const ViewEventSection: React.FC = () => {
         <Image
           src={TEDXLogo}
           alt=""
-          className="w-40 h-auto mx-auto object-contain md:w-96" 
+          className="w-40 h-auto mx-auto object-contain md:w-96"
         />
       </div>
       <div className="flex flex-col gap-2 md:w-[90%]">

@@ -5,12 +5,12 @@ import Image from 'next/image';
 import HeroImage from 'public/images/hero-image.png';
 import HeroImage2 from 'public/images/hero-image-2.jpg';
 import HeroImage3 from 'public/images/hero-image-3.jpg';
-import styles from './HeroCarousel.module.css';
+import styling from './HeroCarousel.module.css';
 import {Autoplay} from 'swiper/modules';
 
 export default function HeroCarousel() {
   return (
-    <div className={styles.heroCarousel}>
+    <div className={styling.heroCarousel}>
       {/* <div className='bg-black/30 h-screen w-full'></div> */}
       <Swiper
         centeredSlides={true}
@@ -19,12 +19,12 @@ export default function HeroCarousel() {
           delay: 8000,
         }}
         modules={[Autoplay]}
-        className={styles.swiperContainer}
+        className={styling.swiperContainer}
       >
         <SwiperSlide>
-          <div className={styles.slide}>
+          <div className={styling.slide}>
             <Image
-              
+
               src={HeroImage}
               alt=""
               layout="fill"
@@ -34,7 +34,7 @@ export default function HeroCarousel() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.slide}>
+          <div className={styling.slide}>
             <Image
               src={HeroImage2}
               alt=""
@@ -45,7 +45,7 @@ export default function HeroCarousel() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={styles.slide}>
+          <div className={styling.slide}>
             <Image
               src={HeroImage3}
               alt=""
