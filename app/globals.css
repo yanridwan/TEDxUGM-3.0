@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 h1{
-  @apply text-lg font-bold text-redTED
+  @apply text-[calc(1vw+1.4em)] font-bold text-redTED
 }
 button{
   @apply text-md bg-redTED text-white rounded-3xl px-10 py-2

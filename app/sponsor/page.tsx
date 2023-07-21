@@ -13,25 +13,25 @@ export default function Sponsor() {
 
   return (
     <main className="overflow-hidden">
-      <section className="md:mx-20 mx-5">
-        <div className="mx-auto md:w-1/2 text-center">
+      <section className="md:mx-20 mx-10">
+        <div className="mx-auto lg:w-1/2 text-center">
           <h1>OUR SUPPORT</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus impedit cumque placeat! Voluptatem aliquid tenetur eligendi, dolores quae sit rerum in totam porro nemo consectetur eius, culpa earum. Nesciunt, quo!</p>
         </div>
         <div className="mt-10 p-5 bg-white max-md:flex flex-wrap flex-row justify-center md:grid md:grid-cols-5 gap-10 border-black border-4 rounded-xl items-center shadow-[rgba(0,0,15,0.5)_10px_10px_10px_5px]">
           {sponsors.map(sponsor => 
-            <img className="max-md:w-[30%]" src={sponsor.link} key={sponsor.name} alt={sponsor.name}/>
+            <img className="max-md:max-w-[40%] max-sm:max-w-[80%]" src={sponsor.link} key={sponsor.name} alt={sponsor.name}/>
           )}
           {sponsors.map(sponsor => 
-            <img className="max-md:w-[30%]" src={sponsor.link} key={sponsor.name} alt={sponsor.name}/>
+            <img className="max-md:max-w-[40%] max-sm:max-w-[80%]" src={sponsor.link} key={sponsor.name} alt={sponsor.name}/>
           )}
           {sponsors.map(sponsor => 
-            <img className="max-md:w-[30%]" src={sponsor.link} key={sponsor.name} alt={sponsor.name}/>
+            <img className="max-md:max-w-[40%] max-sm:max-w-[80%]" src={sponsor.link} key={sponsor.name} alt={sponsor.name}/>
           )}
         </div>
       </section>
-      <section className="mt-10">
-        <div className="md:w-1/2 md:mx-auto mx-5 text-center">
+      <section className="mt-10 mx-10">
+        <div className="lg:w-1/2 lg:mx-auto mx-10 text-center">
           <h1>JOIN OUR SUPPORT</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptatem quod at, consectetur similique harum ullam a repellat voluptatum ad. Odio maiores cumque quo accusantium nisi tempora? Labore, rem minus!</p>
           <Link href='./merchandise'><button>JOIN</button></Link>
