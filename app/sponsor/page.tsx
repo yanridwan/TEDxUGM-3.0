@@ -15,7 +15,7 @@ export default function Sponsor() {
     <main className="overflow-hidden">
       <section className="md:mx-20 mx-10">
         <div className="mx-auto lg:w-1/2 text-center">
-          <h1>OUR SUPPORT</h1>
+          <h1 className="titleRed">OUR SUPPORT</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus impedit cumque placeat! Voluptatem aliquid tenetur eligendi, dolores quae sit rerum in totam porro nemo consectetur eius, culpa earum. Nesciunt, quo!</p>
         </div>
         <div className="mt-10 p-5 bg-white max-md:flex flex-wrap flex-row justify-center md:grid md:grid-cols-5 gap-10 border-black border-4 rounded-xl items-center shadow-[rgba(0,0,15,0.5)_10px_10px_10px_5px]">
@@ -32,9 +32,9 @@ export default function Sponsor() {
       </section>
       <section className="mt-10 mx-10">
         <div className="lg:w-1/2 lg:mx-auto mx-10 text-center">
-          <h1>JOIN OUR SUPPORT</h1>
+          <h1 className="titleRed">JOIN OUR SUPPORT</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptatem quod at, consectetur similique harum ullam a repellat voluptatum ad. Odio maiores cumque quo accusantium nisi tempora? Labore, rem minus!</p>
-          <Link href='./merchandise'><button>JOIN</button></Link>
+          <Link href='#'><button className="buttonRed">JOIN</button></Link>
         </div>
         <div>
         </div>

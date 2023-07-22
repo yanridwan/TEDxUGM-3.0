@@ -8,7 +8,9 @@
 .buttonRed{
   @apply text-lg bg-redTED text-white rounded-3xl px-10 py-2
 }
-
+body{
+  overflow-x: hidden;
+}
 @layer base{
   .font-outline-half{
     -webkit-text-stroke: .5px black;
