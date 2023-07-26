@@ -3,7 +3,7 @@ import schedules from './schedules';
 import {useState, useEffect} from 'react';
 
 export default function Schedule() {
-    const [active, setActive] = useState<boolean[]>([]);
+    const [active, setActive] = useState<boolean[]>(schedules.map(schedule=>false));
     const today =new Date();
     function fillState(){
         let isFound = false;
@@ -15,16 +15,13 @@ export default function Schedule() {
             }
             else return false;
         });
-        return setActive(isActive);
+        setActive(isActive);
     }
 
     useEffect(()=>{
         fillState();
     }, [schedules, today.getDate()]);
     
-    if(active.length === 0){
-        return <div>Loading...</div>
-    }
     return (
         <main className="">
             <h1 className='text-center titleRed mt-10'>OUR SCHEDULE</h1>
