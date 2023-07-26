@@ -1,46 +1,70 @@
-import schedules from './schedules'
+'use client';
+import schedules from './schedules';
+import {useState, useEffect} from 'react';
 
 export default function Schedule() {
-    return (
-        <div className="">
-            <h1 className='text-center titleRed'>OUR SCHEDULE</h1>
-            <div
-                className="flex flex-col max-md:justify-start max-md:items-start md:grid grid-cols-9 mx-auto p-2"
-            >
-                {schedules.map(schedule =>
+    const [active, setActive] = useState<boolean[]>([]);
+    const today =new Date();
+    function fillState(){
+        let isFound = false;
 
-                    <div className="flex flex-row-reverse justify-start md:contents">
+        const isActive = schedules.map((schedule)=>{
+            if(!isFound && today <= new Date(schedule.date)){
+                isFound = true;
+                return true;
+            }
+            else return false;
+        });
+        return setActive(isActive);
+    }
+
+    useEffect(()=>{
+        fillState();
+    }, [schedules, today.getDate()]);
+    
+    if(active.length === 0){
+        return <div>Loading...</div>
+    }
+    return (
+        <main className="">
+            <h1 className='text-center titleRed mt-10'>OUR SCHEDULE</h1>
+            <div
+                className="md:h-full grid grid-cols-1 md:auto-rows-fr overflow-hidden md:mx-10 mx-2 p-1"
+            >
+                {schedules.map((schedule, index) =>
+                    <section key={schedule.title} className={`${active[index]?'bg-red-500 ':''} px-1 rounded-2xl w-full basis-1 flex flex-row max-md:flex-row-reverse`}>
                         <div
-                            className="col-start-1 col-end-5 flex flex-col justify-center p-4 rounded-xl my-4 ml-auto"
+                            className="flex flex-col flex-[4] gap-2 justify-center items-start p-4 my-4"
                         >
-                            <h3 className="font-semibold text-md mb-1 text-redTED">{schedule.date}</h3>
-                            <h2 className="leading-tight font-bold text-xl text-black text-justify">
+                            <h3 className={` font-semibold text-lg mb-1 ${active[index]?'text-white':'text-redTED'}`}>{new Date(schedule.date).toLocaleDateString("id-ID", {day:"numeric",month:"long", year:"numeric"})}</h3>
+                            <h2 className={`leading-tight font-bold ${index==active.length-1?'text-[calc(1vw+2rem)]':'text-[calc(1vw+1rem)]'} ${active[index]?'text-white':'text-black'}`}>
                                 {schedule.title}
                             </h2>
-                            <p className="leading-tight md:hidden text-justify">
+                            <p className={`leading-tight md:hidden text-justify ${active[index]?'text-white':'text-black'}`} >
                                 {schedule.description}
                             </p>
                         </div>
-                        <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                            <div className="h-full w-6 flex items-center justify-center">
+                        <div className=" md:mx-auto top-1/2 min-h-full relative md:mr-10">
+                            <div className={`${index==active.length-1?'h-0':'h-full max-md:h-[200%]'} w-5 flex items-center justify-center`}>
                                 <div className="lineSchedule"></div>
                             </div>
                             <div
-                                className="dotSchedule"
+                                className={`dotSchedule ${active[index]?'bg-white transform scale-100':' bg-black'}`}
                             ></div>
                         </div>
 
                         <div
-                            className="max-md:hidden text-black col-start-6 flex items-center col-end-10 p-4 rounded-xl my-4 mr-auto">
+                            className={`max-md:hidden flex-[5] ${active[index]?'text-white':'text-black'} flex items-center p-4 rounded-xl my-4 mr-auto`}>
                             <p className="leading-tight text-justify">
                                 {schedule.description}
                             </p>
                         </div>
-                    </div>
+                    </section>
 
                 )}
+                
 
             </div>
-        </div>
+        </main>
     )
 }
