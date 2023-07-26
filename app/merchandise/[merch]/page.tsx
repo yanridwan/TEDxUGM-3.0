@@ -7,9 +7,9 @@ export default function Page({ params, searchParams }: { params: { merch: string
             <h2 className="absolute -top-[calc(2vh+0.4em)] -right-[calc(10vw+2em)] font-outline-1 text-white text-[calc(10vw+3em)]">Merchandise</h2>
             <h2 className="absolute bottom-0 -left-[calc(10vw+2em)] font-outline-1 text-white text-[calc(10vw+3em)]">Merchandise</h2>
             </div>
-            <div className="absolute z-20">
+            <div className="absolute z-20 overflow-x-hidden">
             <section className="bgMerch flex items-center justify-center h-screen">
-                <div className="flex flex-col md:flex-row gap-5 md:gap-20 mx-5 sm:mx-20 md:items-center justify-center">
+                <div className="flex flex-col md:flex-row gap-5 md:gap-20 mx-10 sm:mx-20 md:items-center justify-center">
                 <Image src={`/${searchParams.image}`} alt={productName} width={500} height={300} />
                 <div className="flex flex-col gap-1 md:w-[calc(30%+5rem)]">
                     <h1 className="text-black font-bold text-3xl">{productName}</h1>

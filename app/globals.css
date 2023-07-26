@@ -31,9 +31,8 @@ body{
   background-repeat: repeat;
 }
 .dotSchedule{
-  @apply w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-black
+  @apply absolute top-0 -mt-3 rounded-full w-5 h-5
 }
 .lineSchedule{
   @apply h-full w-1 bg-black
 }
-
