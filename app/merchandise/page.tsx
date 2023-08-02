@@ -8,16 +8,18 @@ export default function Merchandise() {
         })
     }
     return (
-        <main>
-            <div className="max-md:hidden">
-                <h2 className="absolute -top-[calc(2vh+0.4em)] -right-[calc(10vw+2em)] font-outline-1 text-white text-[calc(10vw+3em)]">Merchandise</h2>
-                <h2 className="absolute top-0 -left-[calc(10vw+2em)] font-outline-1 text-white text-[calc(10vw+3em)]">Merchandise</h2>
+        <main className="relative w-full h-full">
+            <div className="absolute -z-20 w-full h-full max-md:hidden">
+                <h2 className="absolute -top-[calc(2vh+0.5em)] -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
+                <h2 className="absolute top-0 -left-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
+                <h2 className="absolute bottom-0 -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
+                <h2 className="absolute -bottom-[calc(2vh+0.5em)] -left-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
             </div>
-            <div className="absolute z-20">
+            <div>
             <section className="w-full text-center">
                 <h1 className="mt-10 titleRed">OUR MERCHANDISE</h1>
             </section>
-            <section className="grid grid-flow-rows-dense grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5 mx-20 mt-20">
+            <section className="md:max-w-[80%] mx-auto gap-10 grid grid-flow-rows-dense grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 max-md:mx-20 mt-20">
                 {merchs.length != 0 ?
                     merchs.map(merch => (
                         <Link key={merch.name} href={{
@@ -28,9 +30,9 @@ export default function Merchandise() {
                                 image: merch.image
                             }
                         }}>
-                            <div>
-                                <div className="merchCard border-black border bg-white rounded-xl aspect-square px-2 flex items-center justify-center">
-                                    <img className="max-md:w-[21rem]" src={merch.image} alt={merch.name} />
+                            <div className="mb-10">
+                                <div className="merchCard border-black border bg-white rounded-3xl aspect-square px-2 flex items-center justify-center mb-2">
+                                    <img src={merch.image} alt={merch.name} />
                                 </div>
                                 <h2 className="font-bold text-lg">{merch.name}</h2>
                                 <p className="text-lg">{merch.price.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}</p>
