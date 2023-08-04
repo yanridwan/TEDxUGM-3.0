@@ -7,6 +7,7 @@ import HeroImage2 from 'public/images/hero-image-2.jpg';
 import HeroImage3 from 'public/images/hero-image-3.jpg';
 import styling from './HeroCarousel.module.css';
 import {Autoplay} from 'swiper/modules';
+import './HeroCarousel.module.css'
 
 export default function HeroCarousel() {
   return (

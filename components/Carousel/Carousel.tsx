@@ -151,7 +151,7 @@ export default function Carousel() {
             <img src={item.image} alt="img" className="rounded-t-lg sm:rounded-t-2xl lg:h-72 lg:rounded-t-[45px]" />
 
             {activeIndex === index && (
-              <div className='text-xs lg:text-lg pt-4 text-justify px-8 sm:text-base md:text-lg h-auto max-w-lg mx-auto lg:mt-6'>
+              <div className='text-xs lg:text-lg pt-4 text-justify px-8 sm:text-base md:text-lg h-auto max-w-lg mx-auto lg:mt-6 xl:text-2xl xl:px-0 xl:mt-24'>
                 <h3 className='font-bold italic'>{item.title}</h3>
                 <p className=''>{item.description}</p>
               </div>
