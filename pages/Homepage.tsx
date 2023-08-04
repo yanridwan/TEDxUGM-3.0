@@ -18,6 +18,7 @@ const Homepage: React.FC = () => {
       <HeroSection />
       <div className="mx-8 md:mx-16 mt-20 flex flex-col md:gap-24">
         <CarouselSection />
+        <hr  className='border-2 border-black/60'/>
         <ViewEventSection />
         <CTASection />
       </div>
@@ -36,7 +37,7 @@ const HeroSection: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-30 z-20"></div>
         <div className="flex flex-col gap-4 sm:px-8 xl:mr-96 z-30 lg:ml-14">
           <h1 className="font-bold text-3xl z-20 leading-snug sm:text-5xl lg:text-8xl lg:max-w-5xl ">
-            <span className="text-[#EB0028]">Memayu</span> Hayuning Bawana
+          Damar: <span className="text-[#EB0028]">Memayu Hayuning</span> Bawana
           </h1>
           <p className="z-20 text-sm font-extralight sm:text-lg md:max-w-4xl lg:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
@@ -45,16 +46,16 @@ const HeroSection: React.FC = () => {
             eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.
             Lorem ipsum dolor sit amet.
           </p>
-          <div className="flex flex-col z-20 gap-4 mt-4 mx-auto lg:mx-0 lg:flex-row">
+          <div className="flex flex-col z-20 gap-4 mt-4 mx-auto lg:mx-0 lg:flex-row lg:gap-8">
             <Button
               text="Register Now"
               variant="primary"
-              className="w-56 md:w-64"
+              className="w-56 md:w-64 hover:scale-110 transition-transform lg:text-xl"
             />
             <Button
               text="Schedule"
               variant="secondary"
-              className="w-56 md:w-64"
+              className="w-56 md:w-64 hover:scale-110 lg:text-xl transition-transform"
             />
           </div>
         </div>
@@ -98,7 +99,7 @@ const ViewEventSection: React.FC = () => {
         <Button
           text="View Our Event at Official TED"
           variant="primary"
-          className="w-64 mx-auto md:mx-0"
+          className="w-64 mx-auto md:mx-0 hover:scale-110 transition-all lg:w-96 lg:text-xl"
         />
       </div>
     </div>
@@ -128,13 +129,13 @@ const CTASection: React.FC = () => {
             <Button
               text="Register Now"
               variant="secondary"
-              className="w-40 mx-auto lg:w-60 xl:w-72 lg:text-2xl xl:text-3xl"
+              className="w-40 mx-auto lg:w-60 xl:w-72 lg:text-2xl xl:text-3xl hover:scale-110 transition-transform"
             />
             <p className="text-center lg:text-xl">OR</p>
             <Button
               text="Check Our Agenda"
               variant="secondary"
-              className="w-48 mx-auto lg:w-72 xl:w-96 lg:text-2xl xl:text-3xl"
+              className="w-48 mx-auto lg:w-72 xl:w-96 lg:text-2xl xl:text-3xl hover:scale-110  transition-transform"
             />
           </div>
         </div>

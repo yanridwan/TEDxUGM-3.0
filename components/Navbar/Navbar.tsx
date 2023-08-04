@@ -4,7 +4,7 @@ import SmallLogo from 'public/images/logo-small.png';
 import DropdownIcon from 'public/images/navbar-dropdown-icon.svg';
 import Image from 'next/image';
 import Link from 'next/link';
-import backgroundPattern from 'public/images/background-pattern.png';
+import backgroundPattern from '/public/images/background-pattern.png';
 import Button from '../Button/Button';
 
 const Navbar: React.FC = () => {
@@ -25,12 +25,9 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full ">
-      <div className="px-10 py-4 flex justify-between bg-[navbar-pattern]"
-      style={{
-        backgroundImage: `url('${backgroundPattern}')`,
-      }}>
-
+    <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/background-pattern.png')]">
+      
+      <div className="px-10 py-4 flex justify-between">
         <Link href="/">
           <Image
             src={SmallLogo}
@@ -40,7 +37,7 @@ const Navbar: React.FC = () => {
         </Link>
         <svg
           onClick={toggleNavbar}
-          className="my-auto cursor-pointer md:hidden"
+          className="my-auto cursor-pointer md:hidden scale-75"
           width="40px"
           height="40px"
           viewBox="0 0 24 24"
@@ -55,9 +52,13 @@ const Navbar: React.FC = () => {
           />
         </svg>
 
-        <div className="hidden md:flex">
+        <div className="hidden md:flex group/preevent">
           <ul className="flex flex-col md:flex-row md:items-center gap-8">
-            <li className="flex items-center" onClick={togglePreEvent}>
+            <li
+              className="flex items-center"
+              onMouseEnter={togglePreEvent}
+              onMouseLeave={togglePreEvent}
+            >
               <a
                 href="#"
                 className={`${
@@ -66,9 +67,37 @@ const Navbar: React.FC = () => {
               >
                 PRE-EVENTS
               </a>
-              <Image src={DropdownIcon} alt="" className="ml-2" />
+              {/* <img src={DropdownIcon} alt="" className="ml-2" /> */}
+              <div className='ml-2 group/preevent-hover:rotate-180 transition-all'>
+                <svg
+                  width="21"
+                  height="13"
+                  viewBox="0 0 21 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_348_1900"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="21"
+                    height="13"
+                  >
+                    <path d="M0 0H20.625V12.7708H0V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_348_1900)">
+                    <path
+                      d="M18.1927 -2L10.3125 5.80729L2.43229 -2L0 0.406251L10.3125 10.6302L20.625 0.406251L18.1927 -2Z"
+                      fill="#FF2C07"
+                    />
+                  </g>
+                </svg>
+              </div>
+
+              {/* <DropdownIcon />   */}
               {isPreEventOpen && (
-                <div className="absolute bg-c-red w-auto h-auto top-14 rounded-lg text-base text-white flex flex-col font-normal  overflow-hidden gap-1">
+                <div className="absolute bg-c-red w-auto h-auto top-14 rounded-lg text-base text-white flex flex-col font-normal  overflow-hidden gap-1 z-50">
                   <div className="overflow-hidden flex flex-col">
                     <div className="px-6 pt-2 pb-1 hover:bg-black">
                       <Link href="#">Talk Show Road To TEDxUGM</Link>
@@ -90,24 +119,60 @@ const Navbar: React.FC = () => {
               )}
             </li>
             <li className="flex justify-center">
-              <a className='hover:text-c-red transition-all' href="#" >MAIN EVENTS</a>
+              <a className="hover:text-c-red transition-all" href="#">
+                MAIN EVENTS
+              </a>
             </li>
             <li>
-              <a className='hover:text-c-red transition-all' href="#">MERCHANDISE</a>
+              <a className="hover:text-c-red transition-all" href="#">
+                MERCHANDISE
+              </a>
             </li>
             <li>
-              <a className='hover:text-c-red transition-all' href="#">SPONSORSHIP</a>
+              <a className="hover:text-c-red transition-all" href="#">
+                SPONSORSHIP
+              </a>
             </li>
-            <li className="flex items-center" onClick={toggleAbout}>
+            <li
+              className="flex items-center z-50 group/about"
+              onMouseEnter={toggleAbout}
+              onMouseLeave={toggleAbout}
+            >
               <a
                 href="#"
                 className={`${
                   isAboutOpen ? 'text-c-red' : 'text-black'
-                } hover:text-c-red transition-all`}
+                } hover:text-c-red transition-all group/about` }
               >
                 ABOUT US
               </a>
-              <Image src={DropdownIcon} alt="" className="ml-2" />
+              {/* <Image src={DropdownIcon} alt="Dropdown Icon" className="ml-2" /> */}
+              <div className='ml-2 group/about-hover:rotate-180 transition-all'>
+                <svg
+                  width="21"
+                  height="13"
+                  viewBox="0 0 21 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_348_1900"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="21"
+                    height="13"
+                  >
+                    <path d="M0 0H20.625V12.7708H0V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_348_1900)">
+                    <path
+                      d="M18.1927 -2L10.3125 5.80729L2.43229 -2L0 0.406251L10.3125 10.6302L20.625 0.406251L18.1927 -2Z"
+                      fill="#FF2C07"
+                    />
+                  </g>
+                </svg>
+              </div>
               {isAboutOpen && (
                 <div className="absolute bg-c-red w-auto h-auto top-14 rounded-lg text-base text-white flex flex-col font-normal  overflow-hidden gap-1">
                   <div className="overflow-hidden flex flex-col">
@@ -127,7 +192,7 @@ const Navbar: React.FC = () => {
               <Button
                 variant="primary"
                 text="SIGN IN"
-                className='md:w-24 lg:w-40'
+                className="md:w-24 lg:w-40 hover:scale-105 transition-transform"
               />
             </li>
           </ul>
@@ -137,14 +202,16 @@ const Navbar: React.FC = () => {
       <div
         className={`${
           isOpen ? 'absolute' : 'hidden'
-        } md:hidden bg-black/80 transition-all duration-300 ease-in-out`}
+        } md:hidden bg-black/80 transition-all duration-300 ease-in-out z-50`}
         style={{ maxHeight: isOpen ? '1000px' : '0', width: '100%' }}
       >
         <div className="flex items-center justify-center text-center py-4 text-white">
           <ul className="flex flex-col md:flex-row gap-4 text-base font-normal">
             <div className="">
               <li>
-                <a className='hover:text-c-red transition-all' href="#">PRE-EVENTS</a>
+                <a className="hover:text-c-red transition-all" href="#">
+                  PRE-EVENTS
+                </a>
               </li>
               <svg
                 width="21"
@@ -174,18 +241,26 @@ const Navbar: React.FC = () => {
               </svg>
             </div>
             <li className="flex justify-center">
-              <a className='hover:text-c-red transition-all' href="#">MAIN EVENTS</a>
+              <a className="hover:text-c-red transition-all" href="#">
+                MAIN EVENTS
+              </a>
               <hr className="border-t border-black border-[0.5px] border-b-0" />
             </li>
 
             <li>
-              <a className='hover:text-c-red transition-all' href="#">MERCHANDISE</a>
+              <a className="hover:text-c-red transition-all" href="#">
+                MERCHANDISE
+              </a>
             </li>
             <li>
-              <a className='hover:text-c-red transition-all' href="#">SPONSORSHIP</a>
+              <a className="hover:text-c-red transition-all" href="#">
+                SPONSORSHIP
+              </a>
             </li>
             <li>
-              <a className='hover:text-c-red transition-all' href="#">ABOUT US</a>
+              <a className="hover:text-c-red transition-all" href="#">
+                ABOUT US
+              </a>
             </li>
           </ul>
         </div>
