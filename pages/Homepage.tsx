@@ -65,7 +65,7 @@ const HeroSection: React.FC = () => {
 
 const CarouselSection: React.FC = () => {
   return (
-    <div className="w-full h-auto mt-20 max-w-4xl mx-auto">
+    <div className="w-full h-auto mt-20 max-w-5xl mx-auto">
       <Carousel />
     </div>
   );

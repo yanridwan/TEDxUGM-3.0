@@ -103,15 +103,22 @@ export default function Carousel() {
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={1.5}
-        spaceBetween={30}
+        // slidesPerView={1.5}
+        // spaceBetween={20}
         breakpoints={{
+
+          425: {
+            
+            spaceBetween: 50,
+            slidesPerView:1.8
+          },
           640: {
+            
             spaceBetween: 90,
             slidesPerView:1.5
           },
           768: {
-            spaceBetween: 130,
+            spaceBetween: 90,
             slidesPerView:1.6
           },
           1024: {
@@ -124,7 +131,7 @@ export default function Carousel() {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 100,
+          depth: 200,
           modifier: 2,
           slideShadows: false,
         }}
@@ -141,10 +148,10 @@ export default function Carousel() {
         ))} */}
         {CarouselContents.map((item, index) => (
           <SwiperSlide key={index} className="shadow-sm transition-all ">
-            <img src={item.image} alt="img" className="rounded-t-lg md:rounded-t-2xl md:h-28" />
+            <img src={item.image} alt="img" className="rounded-t-lg sm:rounded-t-2xl lg:h-72 lg:rounded-t-[45px]" />
 
             {activeIndex === index && (
-              <div className='text-xs pt-4 text-justify px-8 sm:text-base md:text-lg'>
+              <div className='text-xs lg:text-lg pt-4 text-justify px-8 sm:text-base md:text-lg h-auto max-w-lg mx-auto lg:mt-6'>
                 <h3 className='font-bold italic'>{item.title}</h3>
                 <p className=''>{item.description}</p>
               </div>
