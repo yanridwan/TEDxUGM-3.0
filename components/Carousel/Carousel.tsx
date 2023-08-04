@@ -8,52 +8,95 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 
-import './styles.css';
-
+// import styling from './BlurCarousel.module.css';
+import './styles.css'
 // import required modules
 import { EffectCoverflow, Navigation } from 'swiper/modules';
-const CarouselContent: any[] = [
 
-  'https://swiperjs.com/demos/images/nature-1.jpg',
-  'https://swiperjs.com/demos/images/nature-2.jpg',
-  'https://swiperjs.com/demos/images/nature-3.jpg',
-  'https://swiperjs.com/demos/images/nature-4.jpg',
-  'https://swiperjs.com/demos/images/nature-5.jpg',
-];
-
-// const CarouselContents: any[] = [
-//   {
-//     title: 'BUMN Leadership 101',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
-//     image: 'https://swiperjs.com/demos/images/nature-1.jpg',
-//   },
-//   {
-//     title: 'Traveloka 101',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
-//     image: 'https://swiperjs.com/demos/images/nature-2.jpg',
-//   },
-//   {
-//     title: 'Telkomsel 101',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
-//     image: 'https://swiperjs.com/demos/images/nature-3.jpg',
-//   },
-//   {
-//     title: 'Blibli 101',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
-//     image: 'https://swiperjs.com/demos/images/nature-4.jpg',
-//   },
-//   {
-//     title: 'Shopee 101',
-//     description:
-//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
-//     image: 'https://swiperjs.com/demos/images/nature-5.jpg',
-//   },
+// const CarouselContent: any[] = [
+//   'https://swiperjs.com/demos/images/nature-1.jpg',
+//   'https://swiperjs.com/demos/images/nature-2.jpg',
+//   'https://swiperjs.com/demos/images/nature-3.jpg',
+//   'https://swiperjs.com/demos/images/nature-4.jpg',
+//   'https://swiperjs.com/demos/images/nature-5.jpg',
 // ];
-export default function Carousels() {
+
+const CarouselContents: any[] = [
+  {
+    title: 'BUMN Leadership 101',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+    image: 'https://swiperjs.com/demos/images/nature-1.jpg',
+  },
+  {
+    title: 'Traveloka 101',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+    image: 'https://swiperjs.com/demos/images/nature-2.jpg',
+  },
+  {
+    title: 'Telkomsel 101',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+    image: 'https://swiperjs.com/demos/images/nature-3.jpg',
+  },
+  {
+    title: 'Blibli 101',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+    image: 'https://swiperjs.com/demos/images/nature-4.jpg',
+  },
+  {
+    title: 'Shopee 101',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+    image: 'https://swiperjs.com/demos/images/nature-5.jpg',
+  },
+];
+export default function Carousel() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  // const CarouselContent: any[] = [
+  //   'https://swiperjs.com/demos/images/nature-1.jpg',
+  //   'https://swiperjs.com/demos/images/nature-2.jpg',
+  //   'https://swiperjs.com/demos/images/nature-3.jpg',
+  //   'https://swiperjs.com/demos/images/nature-4.jpg',
+  //   'https://swiperjs.com/demos/images/nature-5.jpg',
+  // ];
+
+  const CarouselContents: any[] = [
+    {
+      title: 'BUMN Leadership 101',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+      image: 'https://swiperjs.com/demos/images/nature-1.jpg',
+    },
+    {
+      title: 'Traveloka 101',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+      image: 'https://swiperjs.com/demos/images/nature-2.jpg',
+    },
+    {
+      title: 'Telkomsel 101',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+      image: 'https://swiperjs.com/demos/images/nature-3.jpg',
+    },
+    {
+      title: 'Blibli 101',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+      image: 'https://swiperjs.com/demos/images/nature-4.jpg',
+    },
+    {
+      title: 'Shopee 101',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+      image: 'https://swiperjs.com/demos/images/nature-5.jpg',
+    },
+  ];
+
+
   return (
     <>
       <Swiper
@@ -65,16 +108,19 @@ export default function Carousels() {
         breakpoints={{
           640: {
             spaceBetween: 90,
+            slidesPerView:1.5
           },
           768: {
-            spaceBetween: 150,
+            spaceBetween: 130,
+            slidesPerView:1.6
           },
           1024: {
             spaceBetween: 200,
+            slidesPerView:1.5
           },
         }}
         navigation={true}
-        loop={true}
+        // loop={true}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -83,16 +129,31 @@ export default function Carousels() {
           slideShadows: false,
         }}
         modules={[EffectCoverflow, Navigation]}
-        className=""
+        onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+        
+        // className={styling.Carousel}
+        className=''
       >
-        {CarouselContent.map((item, index) => (
+        {/* {CarouselContent.map((item, index) => (
           <SwiperSlide key={index} className="shadow-sm transition-all">
-            <img src={item} alt="img" className="rounded-sm" />
+            <img src={item} alt="img" className="" />
           </SwiperSlide>
-      ))}
+        ))} */}
+        {CarouselContents.map((item, index) => (
+          <SwiperSlide key={index} className="shadow-sm transition-all ">
+            <img src={item.image} alt="img" className="rounded-t-lg md:rounded-t-2xl md:h-28" />
+
+            {activeIndex === index && (
+              <div className='text-xs pt-4 text-justify px-8 sm:text-base md:text-lg'>
+                <h3 className='font-bold italic'>{item.title}</h3>
+                <p className=''>{item.description}</p>
+              </div>
+            )}
+          </SwiperSlide>
+        ))}
       </Swiper>
 
-          {/* {CarouselContents.map((item, index) => (
+      {/* {CarouselContents.map((item, index) => (
         <div className='mt-10 mx-14' key={index}>
           <h2>{item.title}</h2>
           <p className='text-justify'>
