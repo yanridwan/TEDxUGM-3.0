@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
             facilisis purus non turpis consectetur, non porttitor ante
             consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet
             eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.
-            Lorem   ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet.
           </p>
           <div className="flex flex-col z-20 gap-4 mt-4 mx-auto lg:mx-0 lg:flex-row">
             <Button
@@ -65,7 +65,7 @@ const HeroSection: React.FC = () => {
 
 const CarouselSection: React.FC = () => {
   return (
-    <div className="w-full h-auto mt-20 max-w-3xl mx-auto">
+    <div className="w-full h-auto mt-20 max-w-4xl mx-auto">
       <Carousel />
     </div>
   );
@@ -109,26 +109,34 @@ const CTASection: React.FC = () => {
   return (
     <div>
       {/* <div className="bg-black/60 w-full h-full absolute z-10">s</div> */}
-      <div className="w-full h-auto rounded-2xl bg-slate-600 text-white flex flex-col justify-center py-8 items-center gap-4 mt-4 mb-20 px-8 bg-[url('/images/homepage/cta-bg.png')] overflow-hidden">
-        <div className="max-w-14 flex flex-col items-center text-center gap-2">
-          <p className="text-base font-bold flex">Take Your Risk Now</p>
-          <h2 className="text-3xl font-bold text-center">
-            <span className="text-c-red">Little</span> Action Big
-            <span className="text-c-red"> Impact</span>
-          </h2>
-        </div>
-        <div className="flex flex-col items-center gap-4">
-          <Button
-            text="Register Now"
-            variant="secondary"
-            className="w-40 mx-auto "
-          />
-          <p className="text-center">OR</p>
-          <Button
-            text="Check Our Agenda"
-            variant="secondary"
-            className="w-48 mx-auto"
-          />
+      <div className="w-full h-auto rounded-2xl bg-slate-600 text-white mt-4 mb-20 bg-[url('/images/homepage/cta-bg.png')] overflow-hidden lg:rounded-[72px]">
+        {/* <div className="w-full h-auto rounded-2xl bg-black/60  text-white flex flex-col justify-center py-8 items-center gap-4 mt-4 mb-20 px-8 overflow-hidden "> */}
+        <div className="w-full h-full z-10 bg-black/60 flex p-8 flex-col justify-center items-center gap-4 sm:gap-8 lg:py-36 lg:gap-12">
+          <div className=" flex flex-col items-center text-center gap-2 sm:gap-6">
+            <p className="text-base font-bold flex sm:text-lg lg:text-2xl">Take Your Risk Now</p>
+            <div className="text-3xl font-bold text-center sm:text-5xl flex flex-col sm:gap-3 lg:text-7xl xl:text-8xl">
+              <h2 className="">
+                <span className="text-c-red">Small</span> Act
+              </h2>
+              <h2 className=" ">
+                Big
+                <span className="text-c-red"> Waves</span>
+              </h2>
+            </div>
+          </div>
+          <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
+            <Button
+              text="Register Now"
+              variant="secondary"
+              className="w-40 mx-auto lg:w-60 xl:w-72 lg:text-2xl xl:text-3xl"
+            />
+            <p className="text-center lg:text-xl">OR</p>
+            <Button
+              text="Check Our Agenda"
+              variant="secondary"
+              className="w-48 mx-auto lg:w-72 xl:w-96 lg:text-2xl xl:text-3xl"
+            />
+          </div>
         </div>
       </div>
     </div>
