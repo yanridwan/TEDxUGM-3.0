@@ -207,9 +207,10 @@ const Navbar: React.FC<NavbarProps> = () => {
                   text="SIGN IN"
                   className="md:w-24 lg:w-40 hover:scale-105 transition-transform"
                 />
-                <div className="relative">
+              </div>
+              
+              <div className="relative">
                   <ModalLogin onClose={handleModalClose} open={openModal} />
-                </div>
               </div>
             </li>
           </ul>
