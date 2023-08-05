@@ -14,25 +14,10 @@ import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/css';
 
-interface HomepageProps {
-  openModal: boolean;
-  setOpenModal: (open: boolean) => void;
-}
 
-const Homepage: React.FC<HomepageProps> = ({ openModal, setOpenModal }) => {
-  const handleModalOpen = () => {
-    setOpenModal(true);
-  };
-
-  const handleModalClose = () => {
-    setOpenModal(false);
-  };
-
+const Homepage = () => {
   return (
     <div className="w-full h-auto">
-      <div className="relative">
-        <ModalLogin onClose={handleModalClose} open={openModal} />
-      </div>
       <HeroSection />
       <div className="mx-8 md:mx-16 mt-20 flex flex-col md:gap-24">
         <CarouselSection />

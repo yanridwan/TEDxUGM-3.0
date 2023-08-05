@@ -12,17 +12,9 @@ import { authConfig } from './lib/auth'
 
 export default function Home() {
   // const session = await getServerSession(authConfig)
-  const [openModal, setOpenModal] = useState(false);
 
-  const handleModalOpen = () => {
-    setOpenModal(true);
-  };
 
   return (
-    <div>
-      <Navbar handleModalOpen={handleModalOpen} />
-      <Homepage openModal={openModal} setOpenModal={setOpenModal} />
-      <Footer />
-    </div>
+      <Homepage/>
   )
 }

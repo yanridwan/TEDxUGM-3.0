@@ -6,13 +6,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import backgroundPattern from '/public/images/homepage/background-pattern.png';
 import Button from '../Button/Button';
+import ModalLogin from '../ModalLogin/ModalLogin';
 
 interface NavbarProps {
   handleModalOpen: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ handleModalOpen }) => {
-  
+const Navbar: React.FC<NavbarProps> = () => {
+  const [openModal, setModalOpen] = useState<boolean>(false);
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isPreEventOpen, setIsPreEventOpen] = useState<boolean>(false);
   const [isAboutOpen, setIsAboutOpen] = useState<boolean>(false);
@@ -29,10 +30,12 @@ const Navbar: React.FC<NavbarProps> = ({ handleModalOpen }) => {
     setIsAboutOpen(!isAboutOpen);
   };
 
-  console
+  const handleModalClose = () => {
+    setModalOpen(false);
+  }
+  console;
   return (
     <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/background-pattern.png')]">
-      
       <div className="px-10 py-4 flex justify-between">
         <Link href="/">
           <Image
@@ -74,7 +77,7 @@ const Navbar: React.FC<NavbarProps> = ({ handleModalOpen }) => {
                 PRE-EVENTS
               </a>
               {/* <img src={DropdownIcon} alt="" className="ml-2" /> */}
-              <div className='ml-2 group/preevent-hover:rotate-180 transition-all'>
+              <div className="ml-2 group/preevent-hover:rotate-180 transition-all">
                 <svg
                   width="21"
                   height="13"
@@ -130,7 +133,10 @@ const Navbar: React.FC<NavbarProps> = ({ handleModalOpen }) => {
               </a>
             </li>
             <li>
-              <Link className="hover:text-c-red transition-all" href="/merchandise">
+              <Link
+                className="hover:text-c-red transition-all"
+                href="/merchandise"
+              >
                 MERCHANDISE
               </Link>
             </li>
@@ -148,12 +154,12 @@ const Navbar: React.FC<NavbarProps> = ({ handleModalOpen }) => {
                 href="#"
                 className={`${
                   isAboutOpen ? 'text-c-red' : 'text-black'
-                } hover:text-c-red transition-all group/about` }
+                } hover:text-c-red transition-all group/about`}
               >
                 ABOUT US
               </a>
               {/* <Image src={DropdownIcon} alt="Dropdown Icon" className="ml-2" /> */}
-              <div className='ml-2 group/about-hover:rotate-180 transition-all'>
+              <div className="ml-2 group/about-hover:rotate-180 transition-all">
                 <svg
                   width="21"
                   height="13"
@@ -195,14 +201,15 @@ const Navbar: React.FC<NavbarProps> = ({ handleModalOpen }) => {
               )}
             </li>
             <li>
-              <div onClick={handleModalOpen}>
+              <div onClick={()=>{setModalOpen(true)}}>
                 <Button
                   variant="primary"
                   text="SIGN IN"
                   className="md:w-24 lg:w-40 hover:scale-105 transition-transform"
-                  
                 />
-
+                <div className="relative">
+                  <ModalLogin onClose={handleModalClose} open={openModal} />
+                </div>
               </div>
             </li>
           </ul>
@@ -258,7 +265,10 @@ const Navbar: React.FC<NavbarProps> = ({ handleModalOpen }) => {
             </li>
 
             <li>
-              <Link className="hover:text-c-red transition-all" href="/merchandise">
+              <Link
+                className="hover:text-c-red transition-all"
+                href="/merchandise"
+              >
                 MERCHANDISE
               </Link>
             </li>
