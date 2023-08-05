@@ -1,8 +1,10 @@
+'use client';
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import React from 'react';
-
+import React, { useState } from 'react';
+import Navbar from '@/components/Navbar/Navbar';
+import Footer from '@/components/Footer/Footer';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -14,11 +16,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
+    const [openModal, setOpenModal] = useState(false);
+
+    const handleModalOpen = () => {
+      setOpenModal(true);
+    };
+  
+    return (
     <html lang="en">
       <body className={inter.className}>
+      <div>
+        <Navbar handleModalOpen={handleModalOpen} />
         {children}
-        
+        <Footer />
+      </div>
       </body>
     </html>
   )
