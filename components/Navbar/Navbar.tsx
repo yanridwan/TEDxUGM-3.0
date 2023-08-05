@@ -7,7 +7,12 @@ import Link from 'next/link';
 import backgroundPattern from '/public/images/background-pattern.png';
 import Button from '../Button/Button';
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  handleModalOpen: () => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ handleModalOpen }) => {
+  
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isPreEventOpen, setIsPreEventOpen] = useState<boolean>(false);
   const [isAboutOpen, setIsAboutOpen] = useState<boolean>(false);
@@ -24,6 +29,7 @@ const Navbar: React.FC = () => {
     setIsAboutOpen(!isAboutOpen);
   };
 
+  console
   return (
     <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/background-pattern.png')]">
       
@@ -189,11 +195,15 @@ const Navbar: React.FC = () => {
               )}
             </li>
             <li>
-              <Button
-                variant="primary"
-                text="SIGN IN"
-                className="md:w-24 lg:w-40 hover:scale-105 transition-transform"
-              />
+              <div onClick={handleModalOpen}>
+                <Button
+                  variant="primary"
+                  text="SIGN IN"
+                  className="md:w-24 lg:w-40 hover:scale-105 transition-transform"
+                  
+                />
+
+              </div>
             </li>
           </ul>
         </div>

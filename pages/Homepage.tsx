@@ -14,8 +14,13 @@ import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/css';
 
-const Homepage: React.FC = () => {
-  const [openModal, setOpenModal] = useState(false);
+interface HomepageProps {
+  openModal: boolean;
+  setOpenModal: (open: boolean) => void;
+}
+
+const Homepage: React.FC<HomepageProps> = ({openModal, setOpenModal}) => {
+  
 
   const handleModalOpen = () => {
     setOpenModal(true);
