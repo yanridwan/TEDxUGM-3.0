@@ -1,11 +1,11 @@
 "use client"
 import React, {useState} from 'react';
 import Image from 'next/image';
-import HeroImage from 'public/images/hero-image.png';
+import HeroImage from 'public/images/homepage/hero-image.png';
 import Button from '../components/Button/Button';
 import Carousel from '../components/Carousel/Carousel';
-import Xlogo from 'public/images/x-logo-large.png';
-import TEDXLogo from 'public/images/tedx-ugm-logo-black.png';
+import Xlogo from 'public/images/homepage/x-logo-large.png';
+import TEDXLogo from 'public/images/homepage/tedx-ugm-logo-black.png';
 import ModalLogin from '../components/ModalLogin/ModalLogin.tsx';
 import HeroCarousel from '../components/HeroCarousel/HeroCarousel.tsx';
 

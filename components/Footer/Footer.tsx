@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import TEDxLogo from 'public/images/TEDx UGM Logo White.png';
 import Image from 'next/image';
-import Tiktok from 'public/images/tiktok-logo.png';
-import Linkedin from 'public/images/linkedin-logo.png';
-import IG from 'public/images/ig-logo.png';
+import TEDxLogo from 'public/images/homepage/TEDx UGM Logo White.png';
+import Tiktok from 'public/images/homepage/tiktok-logo.png';
+import Linkedin from 'public/images/homepage/linkedin-logo.png';
+import IG from 'public/images/homepage/ig-logo.png';
 
 const Footer: React.FC = () => {
   return (

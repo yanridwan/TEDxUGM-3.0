@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import SmallLogo from 'public/images/logo-small.png';
-import DropdownIcon from 'public/images/navbar-dropdown-icon.svg';
+import SmallLogo from 'public/images/homepage/logo-small.png';
+import DropdownIcon from 'public/images/homepage/navbar-dropdown-icon.svg';
 import Image from 'next/image';
 import Link from 'next/link';
-import backgroundPattern from '/public/images/background-pattern.png';
+import backgroundPattern from '/public/images/homepage/background-pattern.png';
 import Button from '../Button/Button';
 
 interface NavbarProps {
@@ -135,7 +135,7 @@ const Navbar: React.FC<NavbarProps> = ({ handleModalOpen }) => {
               </a>
             </li>
             <li>
-              <a className="hover:text-c-red transition-all" href="#">
+              <a className="hover:text-c-red transition-all" href="/sponsor">
                 SPONSORSHIP
               </a>
             </li>
