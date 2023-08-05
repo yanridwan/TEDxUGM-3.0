@@ -1,11 +1,13 @@
-import React from 'react';
+"use client"
+import React, {useState} from 'react';
 import Image from 'next/image';
 import HeroImage from 'public/images/hero-image.png';
 import Button from '../components/Button/Button';
 import Carousel from '../components/Carousel/Carousel';
 import Xlogo from 'public/images/x-logo-large.png';
 import TEDXLogo from 'public/images/tedx-ugm-logo-black.png';
-import HeroCarousel from 'components/HeroCarousel/HeroCarousel.tsx';
+import ModalLogin from '../components/ModalLogin/ModalLogin.tsx';
+import HeroCarousel from '../components/HeroCarousel/HeroCarousel.tsx';
 
 // import Swiper JS
 import Swiper from 'swiper';
@@ -13,8 +15,22 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 const Homepage: React.FC = () => {
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleModalOpen = () => {
+    setOpenModal(true);
+  };
+
+  const handleModalClose = () => {
+    setOpenModal(false);
+  };
+
   return (
-    <div>
+    <div className='w-full h-auto'>
+      <div className='relative'>
+
+      <ModalLogin onClose={handleModalClose} open={openModal}/>
+      </div>
       <HeroSection />
       <div className="mx-8 md:mx-16 mt-20 flex flex-col md:gap-24">
         <CarouselSection />
@@ -27,6 +43,9 @@ const Homepage: React.FC = () => {
 };
 
 export default Homepage;
+
+
+
 
 const HeroSection: React.FC = () => {
   return (
