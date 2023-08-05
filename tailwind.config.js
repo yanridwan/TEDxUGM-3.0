@@ -20,6 +20,9 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
+      colors:{
+        'redTED':'#FF0000'
+      }
     },
   },
   variants: {},
