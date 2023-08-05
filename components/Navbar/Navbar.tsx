@@ -130,14 +130,14 @@ const Navbar: React.FC<NavbarProps> = ({ handleModalOpen }) => {
               </a>
             </li>
             <li>
-              <a className="hover:text-c-red transition-all" href="#">
+              <Link className="hover:text-c-red transition-all" href="/merchandise">
                 MERCHANDISE
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:text-c-red transition-all" href="/sponsor">
+              <Link className="hover:text-c-red transition-all" href="/sponsor">
                 SPONSORSHIP
-              </a>
+              </Link>
             </li>
             <li
               className="flex items-center z-50 group/about"
@@ -258,14 +258,14 @@ const Navbar: React.FC<NavbarProps> = ({ handleModalOpen }) => {
             </li>
 
             <li>
-              <a className="hover:text-c-red transition-all" href="#">
+              <Link className="hover:text-c-red transition-all" href="/merchandise">
                 MERCHANDISE
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:text-c-red transition-all" href="#">
+              <Link className="hover:text-c-red transition-all" href="/sponsor">
                 SPONSORSHIP
-              </a>
+              </Link>
             </li>
             <li>
               <a className="hover:text-c-red transition-all" href="#">
