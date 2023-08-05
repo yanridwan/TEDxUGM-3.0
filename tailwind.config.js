@@ -11,12 +11,13 @@ module.exports = {
       backgroundImage: {
         'navbar-pattern': "url('/images/background-pattern.svg')",
       },
-      colors: {
-        'c-red': '#FF2C07',
-      },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
+      colors:{
+        'redTED':'#FF0000',
+        'c-red': '#FF2C07',
+      }
     },
   },
   variants: {},
