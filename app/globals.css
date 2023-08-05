@@ -6,7 +6,7 @@
   @apply text-[calc(1vw+1em)] font-bold text-redTED
 }
 .buttonRed{
-  @apply text-lg bg-redTED text-white rounded-3xl px-14 py-1 font-bold
+  @apply text-lg bg-redTED text-white rounded-3xl px-[6%] py-1 font-bold
 }
 body{
   overflow-x: hidden;
