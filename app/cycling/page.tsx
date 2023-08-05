@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Interview() {
   return (
     <div class="relative bg-black min-h-screen ">
