@@ -3,8 +3,8 @@ export default function Page({ params, searchParams }: { params: { merch: string
     const productName = params.merch.replace(/%20/g, " ");
     return (
         <main>
-            <div className="max-md:hidden">
-            <h2 className="absolute -top-[calc(2vh+0.3em)] -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
+            <div className="max-md:hidden absolute h-screen w-screen">
+            <h2 className="absolute top-0 -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
             <h2 className="absolute bottom-0 -left-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
             </div>
             <section className="bgMerch flex items-center justify-center h-screen">
