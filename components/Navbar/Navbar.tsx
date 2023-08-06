@@ -1,10 +1,8 @@
 'use client';
 import React, { useState } from 'react';
 import SmallLogo from 'public/images/homepage/logo-small.png';
-import DropdownIcon from 'public/images/homepage/navbar-dropdown-icon.svg';
 import Image from 'next/image';
 import Link from 'next/link';
-import backgroundPattern from '/public/images/homepage/background-pattern.png';
 import Button from '../Button/Button';
 import ModalLogin from '../ModalLogin/ModalLogin';
 
@@ -35,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   }
   console;
   return (
-    <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/background-pattern.png')]">
+    <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/homepage/background-pattern.png')]">
       <div className="px-10 py-4 flex justify-between">
         <Link href="/">
           <Image
