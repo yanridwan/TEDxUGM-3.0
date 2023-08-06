@@ -9,19 +9,14 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'navbar-pattern': `url('${path.resolve(
-          __dirname,
-          '/images/background-pattern.png'
-        )}')`,
-      },
-      colors: {
-        'c-red': '#FF2C07',
+        'navbar-pattern': "url('/images/background-pattern.svg')",
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
       },
       colors:{
-        'redTED':'#FF0000'
+        'redTED':'#FF0000',
+        'c-red': '#FF2C07',
       }
     },
   },
