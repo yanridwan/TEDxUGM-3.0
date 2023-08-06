@@ -6,19 +6,59 @@ function Cycling() {
       <h1 className="absolute left-16 font-bold top-5">Cycling</h1>
       <img src="interview/logo.svg" className="w-25 h-10 absolute right-5 bottom-4"/>
     </div>
-    <div>
-      <img src="/cycling/pics.svg" className=" absolute h-80 w-80 left-[40px] top-[40px]"/>
-      <h1 className="absolute text-2xl text-white font-bold left-[400px] top-[100px]">Upcoming Tour de Frances</h1>
-      <h2 className="absolute text-white left-[400px] top-[160px] text-justify md">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> 
-      Sed earum, voluptate aliquid reiciendis minima nihil incidunt. <br />
-      Corporis beatae eos suscipit labore voluptatem nostrum eligendi natus<br />
-      quod dolor? Voluptatem, soluta corporis.<br /></h2>
+    <div className="flex flex-row items-center">
+      <img src="/cycling/pics.svg" className=" h-80 w-80 ml-10 mt-10"/>
+      <div>
+      <h1 className="text-2xl text-white font-bold ml-10 mt-5 mb-3 ">Upcoming Tour de Frances</h1>
+      <h3 className=" text-white ml-10 mr-40 text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Sed earum, voluptate aliquid reiciendis minima nihil incidunt.
+      Corporis beatae eos suscipit labore voluptatem nostrum eligendi natus
+      quod dolor? Voluptatem, soluta corporis.</h3>
+      <img src="/cycling/location.svg" className="h-5 w-5 ml-10 mt-5"/>
+      <h4 className="font-bold text-white ml-16 -mt-5 mb-3">UGM</h4>
+      <img src="/cycling/time.svg" className="h-5 w-5 ml-10"/>
+      <h4 className="font-bold text-white ml-16 -mt-5">07.00-07.30</h4>
     </div>
-    <div>
-      <img src="/cycling/pics2.svg" className=" absolute h-80 w-80 right-[40px] top-[300px]"/>
     </div>
-    <div>
-      <img src="/cycling/pics3.svg" className=" absolute h-80 w-80 left-[40px] top-[560px]"/>
+    <div className="flex flex-row-reverse items-center">
+    <button className="bg-red-600 hover:bg-red-500 text-white font-bold px-5 mt-0 mr-36 py-2.5 rounded-full">Register Now</button>
+    <span class="h-1 w-2/3 bg-white"></span>
+    </div>
+    <div className="flex flex-row-reverse items-center">
+      <img src="/cycling/pics2.svg" className="h-80 w-80 mr-10  mt-10"/>
+      <div>
+      <h1 className=" text-2xl text-white font-bold ml-40 mb-3 ">Upcoming Tour de Frances</h1>
+      <h3 className=" text-white ml-40 mr-40 text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Sed earum, voluptate aliquid reiciendis minima nihil incidunt.
+      Corporis beatae eos suscipit labore voluptatem nostrum eligendi natus
+      quod dolor? Voluptatem, soluta corporis.</h3>
+      <img src="/cycling/location.svg" className="h-5 w-5 ml-40 mt-5"/>
+      <h4 className="font-bold text-white ml-48 -mt-5 mb-3">UGM</h4>
+      <img src="/cycling/time.svg" className="h-5 w-5 ml-40"/>
+      <h4 className="font-bold text-white ml-48 -mt-5">07.00-07.30</h4>
+      </div>
+    </div>
+    <div className="flex flex-row items-center">
+    <button className="bg-red-600 hover:bg-red-500 text-white font-bold px-5 mt-0 ml-40 py-2.5 rounded-full">Register Now</button>
+    <span class="h-1 w-2/3 bg-white"></span>
+    </div>
+    <div className="flex flex-row items-center">
+      <img src="/cycling/pics3.svg" className=" h-80 w-80 ml-10 mt-10 "/>
+      <div>
+      <h1 className="text-2xl text-white font-bold ml-10 mt-5 mb-3 ">Upcoming Tour de Frances</h1>
+      <h3 className=" text-white ml-10 mr-40 text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Sed earum, voluptate aliquid reiciendis minima nihil incidunt.
+      Corporis beatae eos suscipit labore voluptatem nostrum eligendi natus
+      quod dolor? Voluptatem, soluta corporis.</h3>
+      <img src="/cycling/location.svg" className="h-5 w-5 ml-10 mt-5"/>
+      <h4 className="font-bold text-white ml-16 -mt-5 mb-3">UGM</h4>
+      <img src="/cycling/time.svg" className="h-5 w-5 ml-10"/>
+      <h4 className="font-bold text-white ml-16 -mt-5">07.00-07.30</h4>
+      </div>
+    </div>
+    <div className="flex flex-row-reverse items-center">
+    <button className="bg-red-600 hover:bg-red-500 text-white font-bold px-5 mt-0 mr-36 py-2.5 mb-10 rounded-full">Register Now</button>
+    <span class="h-1 w-2/3 bg-white mb-10"></span>
     </div>
 </div>
   )
