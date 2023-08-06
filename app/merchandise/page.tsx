@@ -9,11 +9,11 @@ export default function Merchandise() {
     }
     return (
         <main className="relative w-full h-full">
-            <div className="absolute -z-20 w-full h-full max-md:hidden">
-                <h2 className="absolute -top-[calc(2vh+0.5em)] -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
-                <h2 className="absolute top-0 -left-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
-                <h2 className="absolute bottom-0 -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
-                <h2 className="absolute -bottom-[calc(2vh+0.5em)] -left-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
+            <div className="absolute -z-20 w-full h-full max-lg:hidden">
+                <span className="absolute -top-[calc(2vh+0.5em)] -right-[calc(10vw+2em)] layoutTitle">Merchandise</span>
+                <span className="absolute top-0 -left-[calc(10vw+2em)] layoutTitle">Merchandise</span>
+                <span className="absolute bottom-0 -right-[calc(10vw+2em)] layoutTitle">Merchandise</span>
+                <span className="absolute -bottom-[calc(2vh+0.5em)] -left-[calc(10vw+2em)] layoutTitle">Merchandise</span>
             </div>
             <div>
             <section className="w-full text-center">
