@@ -1,9 +1,10 @@
 'use client';
+
 import schedules from './schedules';
 import {useState, useEffect} from 'react';
 
 export default function Schedule() {
-    const [active, setActive] = useState<boolean[]>(schedules.map(schedule=>false));
+    const [active, setActive] = useState<boolean[]>(schedules.map(()=>false));
     const today =new Date();
     function fillState(){
         let isFound = false;
@@ -23,7 +24,13 @@ export default function Schedule() {
     }, [schedules, today.getDate()]);
     
     return (
-        <main className="">
+        <main className="relative">
+            <div className="absolute -z-20 w-full h-full max-md:hidden">
+                <h2 className="absolute -top-[calc(2vh+0.5em)] -right-[calc(10vw+0.5em)] layoutTitle">Schedule</h2>
+                <h2 className="absolute top-0 -left-[calc(10vw+0.5em)] layoutTitle">Schedule</h2>
+                <h2 className="absolute bottom-0 -right-[calc(10vw+0.5em)] layoutTitle">Schedule</h2>
+                <h2 className="absolute -bottom-[calc(2vh+0.5em)] -left-[calc(10vw+0.5em)] layoutTitle">Schedule</h2>
+            </div>
             <h1 className='text-center titleRed mt-10'>OUR SCHEDULE</h1>
             <div
                 className="md:h-full grid grid-cols-1 md:auto-rows-fr overflow-hidden md:mx-10 mx-2 p-1"
@@ -57,10 +64,7 @@ export default function Schedule() {
                             </p>
                         </div>
                     </section>
-
                 )}
-                
-
             </div>
         </main>
     )
