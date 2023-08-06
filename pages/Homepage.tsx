@@ -6,7 +6,6 @@ import Button from '../components/Button/Button';
 import Carousel from '../components/Carousel/Carousel';
 import Xlogo from 'public/images/homepage/x-logo-large.png';
 import TEDXLogo from 'public/images/homepage/tedx-ugm-logo-black.png';
-import ModalLogin from '../components/ModalLogin/ModalLogin.tsx';
 import HeroCarousel from '../components/HeroCarousel/HeroCarousel.tsx';
 
 // import Swiper JS

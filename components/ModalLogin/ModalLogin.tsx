@@ -43,7 +43,7 @@ const ModalLogin: React.FC<ModalLoginProps> = ({ open, onClose }) => {
 
         <div className="flex w-full h-full flex-col gap-2 p-6 lg:w-3/6 lg:justify-center lg:gap-4">
           <h3 className="font-bold text-lg md:text-2xl lg:text-4xl">Login</h3>
-          <form className="flex-col flex gap-2">
+          <form className="flex-col flex gap-2 font-normal">
             <label htmlFor="email">Email</label>
             <input
               className="pl-4 h-8 border-c-red lg:h-10 focus:outline-none border-[1px] rounded-md text-sm"
