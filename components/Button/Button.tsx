@@ -6,6 +6,8 @@ interface ButtonProps {
   href?: string;
   className?: string;
   text: string;
+  onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -13,6 +15,8 @@ const Button: React.FC<ButtonProps> = ({
   href,
   className = '',
   text,
+  onClick,
+  type
 }) => {
   const buttonClasses = `px-2 py-1 rounded font-bold rounded-full text-center ${
     variant === 'primary'
@@ -25,12 +29,15 @@ const Button: React.FC<ButtonProps> = ({
   if (href) {
     return (
       <Link className={buttonClasses} href={href}>
+        <button type={type}>
+
         {text}
+        </button>
       </Link>
     );
   }
 
-  return <button className={buttonClasses}>{text}</button>;
+  return <button type={type} onClick={onClick} className={buttonClasses}>{text}</button>;
 };
 
 export default Button;
