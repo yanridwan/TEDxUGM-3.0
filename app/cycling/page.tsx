@@ -6,7 +6,7 @@ function Cycling() {
       <h1 className="absolute left-16 font-bold top-5">Cycling</h1>
       <img src="interview/logo.svg" className="w-25 h-10 absolute right-5 bottom-4"/>
     </div>
-    <div>
+    <div className="flex flex-row items-center">
       <img src="/cycling/pics.svg" className=" absolute h-80 w-80 left-[40px] top-[40px]"/>
       <h1 className="absolute text-2xl text-white font-bold left-[400px] top-[100px]">Upcoming Tour de Frances</h1>
       <h2 className="absolute text-white left-[400px] top-[160px] text-justify md">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> 
@@ -14,10 +14,10 @@ function Cycling() {
       Corporis beatae eos suscipit labore voluptatem nostrum eligendi natus<br />
       quod dolor? Voluptatem, soluta corporis.<br /></h2>
     </div>
-    <div>
+    <div className="flex flex-row items-center">
       <img src="/cycling/pics2.svg" className=" absolute h-80 w-80 right-[40px] top-[300px]"/>
     </div>
-    <div>
+    <div className="flex flex-row items-center">
       <img src="/cycling/pics3.svg" className=" absolute h-80 w-80 left-[40px] top-[560px]"/>
     </div>
 </div>
