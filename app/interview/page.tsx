@@ -7,16 +7,16 @@ function Interview() {
       <img src="interview/logo.svg" className="w-25 h-10 absolute right-5 bottom-4"/>
     </div>
     <div className="flex flex-row items-center">
-      <img src="/cycling/pics.svg" className=" h-80 w-80 ml-10 mt-10"/>
+      <img src="/interview/pic1.svg" className=" h-80 w-80 ml-10 mt-10"/>
       <div>
       <h1 className="text-2xl text-white font-bold ml-10 mt-5 mb-3 ">Upcoming Tour de Frances</h1>
       <h3 className=" text-white ml-10 mr-40 text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Sed earum, voluptate aliquid reiciendis minima nihil incidunt.
       Corporis beatae eos suscipit labore voluptatem nostrum eligendi natus
       quod dolor? Voluptatem, soluta corporis.</h3>
-      <img src="/cycling/location.svg" className="h-5 w-5 ml-10 mt-5"/>
+      <img src="/interview/loc1.svg" className="h-5 w-5 ml-10 mt-5"/>
       <h4 className="font-bold text-white ml-16 -mt-5 mb-3">UGM</h4>
-      <img src="/cycling/time.svg" className="h-5 w-5 ml-10"/>
+      <img src="/interview/time1.svg" className="h-5 w-5 ml-10"/>
       <h4 className="font-bold text-white ml-16 -mt-5">07.00-07.30</h4>
     </div>
     </div>
@@ -25,7 +25,7 @@ function Interview() {
     <span class="h-1 w-2/3 bg-white"></span>
     </div>
     <div className="flex flex-row-reverse items-center">
-      <img src="/cycling/pics2.svg" className="h-80 w-80 mr-10  mt-10"/>
+      <img src="/interview/pic2.svg" className="h-80 w-80 mr-10  mt-10"/>
       <div>
       <h1 className=" text-2xl text-white font-bold ml-40 mb-3 ">Upcoming Tour de Frances</h1>
       <h3 className=" text-white ml-40 mr-40 text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -43,7 +43,7 @@ function Interview() {
     <span class="h-1 w-2/3 bg-white"></span>
     </div>
     <div className="flex flex-row items-center">
-      <img src="/cycling/pics3.svg" className=" h-80 w-80 ml-10 mt-10 "/>
+      <img src="/interview/pic3.png" className=" h-80 w-80 ml-10 mt-10 "/>
       <div>
       <h1 className="text-2xl text-white font-bold ml-10 mt-5 mb-3 ">Upcoming Tour de Frances</h1>
       <h3 className=" text-white ml-10 mr-40 text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -52,7 +52,7 @@ function Interview() {
       quod dolor? Voluptatem, soluta corporis.</h3>
       <img src="/interview/loc1.svg" className="h-5 w-5 ml-10 mt-5"/>
       <h4 className="font-bold text-white ml-16 -mt-5 mb-3">UGM</h4>
-      <img src="/cycling/time.svg" className="h-5 w-5 ml-10"/>
+      <img src="/interview/time1.svg" className="h-5 w-5 ml-10"/>
       <h4 className="font-bold text-white ml-16 -mt-5">07.00-07.30</h4>
       </div>
     </div>
