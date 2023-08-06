@@ -1,4 +1,4 @@
-function Interview() {
+function Cycling() {
   return (
     <div class="relative bg-black min-h-screen ">
     <div class="fixed box-content bg-white w-full h-16">
@@ -11,4 +11,4 @@ function Interview() {
   )
 }
 
-export default Interview
+export default Cycling
