@@ -23,7 +23,7 @@ export default function CardOpen({
   isOpen: boolean;
 }) {
   return (
-    <section>
+    <section className="mb-16">
       <div className="lg:rounded-full flex flex-col gap-10 items-center bg-black text-white p-10 lg:py-5 px-5 mx-10">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-5">
           <h1 className={`font-semibold lg:w-[30%] text-5xl italic ${isOpen ? "" : "hidden"}`}>
@@ -50,8 +50,8 @@ export default function CardOpen({
         </div>
         <p className="w-3/4 mx-auto">{desc}</p>
       </div>
-      <button className={`buttonRed block mx-auto px-10 ${isOpen ? "text-center" : "ml-10"}`}>
-        {isOpen ? "REGISTER NOW!" : "CLOSED"}
+      <button className={`buttonRed block mx-auto px-10 text-center`}>
+        {isOpen ? "REGISTER NOW!" : "CLOSED!"}
       </button>
     </section>
   );
