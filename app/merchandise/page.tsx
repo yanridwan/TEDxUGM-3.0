@@ -10,10 +10,10 @@ export default function Merchandise() {
     return (
         <main className="w-full h-full">
             <div className="w-full h-full max-md:hidden">
-                <h2 className="absolute -top-[calc(2vh+0.3em)] -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
-                <h2 className="absolute top-10 -left-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
-                <h2 className="absolute bottom-0 -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
-                <h2 className="absolute -bottom-[calc(2vh+0.5em)] -left-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
+                <h2 className="absolute -top-[calc(2vh+0.3em)] -right-[calc(10vw+2em)] layoutTitle z-[-99]">Merchandise</h2>
+                <h2 className="absolute top-10 -left-[calc(10vw+2em)] layoutTitle z-[-99]">Merchandise</h2>
+                <h2 className="absolute bottom-0 -right-[calc(10vw+2em)] layoutTitle z-[-99]">Merchandise</h2>
+                <h2 className="absolute -bottom-[calc(2vh+0.5em)] -left-[calc(10vw+2em)] layoutTitle z-[-99]">Merchandise</h2>
             </div>
             <div>
             <section className="w-full text-center">

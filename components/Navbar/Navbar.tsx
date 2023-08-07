@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   }
   console;
   return (
-    <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/homepage/background-pattern.png')]">
+    <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/homepage/background-pattern.png')] bg-white">
       <div className="px-10 py-4 flex justify-between">
         <Link href="/">
           <Image
