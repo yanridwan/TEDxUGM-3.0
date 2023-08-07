@@ -33,14 +33,14 @@ export default function Schedule() {
             </div>
             <h1 className='text-center titleRed mt-10'>OUR SCHEDULE</h1>
             <div
-                className="md:h-full grid grid-cols-1 md:auto-rows-fr overflow-hidden md:mx-10 mx-2 p-1"
+                className="md:h-full grid grid-cols-1 md:auto-rows-fr overflow-hidden md:mx-10 lg:mx-auto lg:w-[80%] mx-2 p-1"
             >
                 {schedules.map((schedule, index) =>
                     <section key={schedule.title} className={`${active[index]?'bg-red-500 ':''} px-1 rounded-2xl w-full basis-1 flex flex-row max-md:flex-row-reverse`}>
                         <div
                             className="flex flex-col flex-[4] gap-2 justify-center items-start p-4 my-4"
                         >
-                            <h3 className={` font-semibold text-lg mb-1 ${active[index]?'text-white':'text-redTED'}`}>{new Date(schedule.date).toLocaleDateString("id-ID", {day:"numeric",month:"long", year:"numeric"})}</h3>
+                            <h3 className={` font-bold text-lg mb-1 ${active[index]?'text-orange-active':'text-redTED'}`}>{new Date(schedule.date).toLocaleDateString("id-ID", {day:"numeric",month:"long", year:"numeric"})}</h3>
                             <h2 className={`leading-tight font-bold ${index==active.length-1?'text-[calc(1vw+2rem)]':'text-[calc(1vw+1rem)]'} ${active[index]?'text-white':'text-black'}`}>
                                 {schedule.title}
                             </h2>

@@ -4,8 +4,8 @@ export default function Page({ params, searchParams }: { params: { merch: string
     return (
         <main>
             <div className="max-md:hidden">
-            <h2 className="absolute -top-[calc(2vh+0.3em)] -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
-            <h2 className="absolute bottom-0 -left-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
+            <h2 className="absolute -top-[calc(2vh+0.3em)] -right-[calc(10vw+2em)] opacity-100 font-outline-1 font-bold text-white text-[calc(10vw+3em)]">Merchandise</h2>
+            <h2 className="absolute bottom-0 -left-[calc(10vw+2em)] font-outline-1 font-bold text-white text-[calc(10vw+3em)]">Merchandise</h2>
             </div>
             <section className="bgMerch flex items-center justify-center h-screen">
                 <div className="flex flex-col md:flex-row gap-5 md:gap-20 mx-10 sm:mx-20 md:items-center justify-center">
