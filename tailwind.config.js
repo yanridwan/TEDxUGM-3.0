@@ -16,7 +16,7 @@ module.exports = {
       },
       colors:{
         'redTED':'#FF0000',
-        'c-red': '#FF2C07',
+        'orange-active':'#FFC700'
       }
     },
   },

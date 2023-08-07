@@ -37,7 +37,7 @@ body {
   @apply h-full w-1 bg-black;
 }
 .layoutTitle {
-  @apply font-outline-1 font-bold text-white text-[calc(10vw+3em)];
+  @apply font-outline-1 font-bold text-white text-[calc(10vw+3em)] opacity-50;
 }
 .countdown {
   @apply bg-black text-white text-[calc(3vw+0.4em)] lg:leading-[calc(2vw+0.5em)] font-bold flex flex-col justify-center items-center gap-[calc(2vw+0.1em)] rounded-[calc(2vw+0.2em)] aspect-square;
