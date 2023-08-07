@@ -33,7 +33,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   }
   console;
   return (
-    <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/homepage/background-pattern.png')]">
+    <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/homepage/background-pattern.png')] bg-white">
       <div className="px-10 py-4 flex justify-between">
         <Link href="/">
           <Image
@@ -148,14 +148,14 @@ const Navbar: React.FC<NavbarProps> = () => {
               onMouseEnter={toggleAbout}
               onMouseLeave={toggleAbout}
             >
-              <a
-                href="#"
+              <Link
+                href="/about"
                 className={`${
                   isAboutOpen ? 'text-c-red' : 'text-black'
                 } hover:text-c-red transition-all group/about`}
               >
                 ABOUT US
-              </a>
+              </Link>
               {/* <Image src={DropdownIcon} alt="Dropdown Icon" className="ml-2" /> */}
               <div className="ml-2 group/about-hover:rotate-180 transition-all">
                 <svg
