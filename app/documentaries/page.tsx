@@ -1,4 +1,4 @@
-function Documentaries() {
+function Interview() {
   return (
     <div class="relative bg-red-600 min-h-screen ">
     <div class="fixed box-content bg-white w-full h-16">
@@ -11,4 +11,4 @@ function Documentaries() {
   )
 }
 
-export default Documentaries
+export default Interview

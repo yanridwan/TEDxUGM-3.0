@@ -30,8 +30,19 @@ body {
   background-image: url("../public/bgMerch.png");
   background-repeat: repeat;
 }
+<<<<<<< HEAD
 .dotSchedule{
   @apply absolute top-0 -mt-3 rounded-full w-5 h-5
+=======
+.dotSchedule {
+  @apply absolute top-0 -mt-3 rounded-full w-5 h-5;
+}
+.lineSchedule {
+  @apply h-full w-1 bg-black;
+}
+.layoutTitle {
+  @apply font-outline-1 font-bold text-white text-[calc(10vw+3em)] opacity-50;
+>>>>>>> 3c1db1d66624cc6f22d2ee5e5e55ded102c54eee
 }
 .countdown {
   @apply bg-black text-white text-[calc(3vw+0.4em)] lg:leading-[calc(2vw+0.5em)] font-bold flex flex-col justify-center items-center gap-[calc(2vw+0.1em)] rounded-[calc(2vw+0.2em)] aspect-square;
