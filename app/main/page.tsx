@@ -11,23 +11,10 @@ function Main() {
       style={{
         backgroundImage: `url('/main/bg.png')`,
       }}>
-        <div>
-        <button class=" bg-red-600 text-white font-bold py-2 px-4 rounded-full">
-            PURCHASE TICKET NOW
-        </button>
-        </div>
-    </div>
-    <div>
-        <img src="/main/orang.svg" className="w-full h-full" />
-    </div>
-      <div
-      className="h-screen bg-cover bg-center flex justify-center items-center"
-      style={{
-        backgroundImage: `url('/main/bg1.svg')`,
-      }}>
-        <div>
-        </div>
-    </div>
+          <div>
+            <h1 className="text-red-600 font-italic text-5xl">Coming Soon</h1>
+          </div>
+      </div>
     </div>
     )
 }
