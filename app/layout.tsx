@@ -1,14 +1,10 @@
-'use client';
+"use client"
 import './globals.css'
-import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import React, { useState } from 'react';
+import { metadata } from './metadata.ts';  
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
-
-export const metadata: Metadata = {
-  title: 'TEDx UGM 2023'
-}
 
 export default function RootLayout({
   children,
