@@ -7,13 +7,14 @@ export async function POST(req: NextRequest) {
     const prisma = new PrismaClient();
     const requestBody = await req.json();
 
-    const { name, email, password, job, university, major } = requestBody;
+    const { name, email, password, number, job, university, major } = requestBody;
     const hashedPassword = await bcrypt.hash(password, 10);
 
     const userData = {
       name,
       email,
       password: hashedPassword,
+      number,
       job,
       university,
       major
