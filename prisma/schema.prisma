@@ -12,6 +12,7 @@ model User {
   name          String?
   email         String    @unique
   emailVerified DateTime? @map("email_verified")
+  number        String?
   password      String?   @map("hashed_password")
   image         String?
   job           String?
