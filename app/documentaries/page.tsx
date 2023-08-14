@@ -1,4 +1,4 @@
-import star from "../../public/docs/star.svg";
+import star from "../../public/documentaries/star.svg";
 import Image from "next/image";
 function Documentaries() {
   return (
