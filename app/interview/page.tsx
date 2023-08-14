@@ -1,6 +1,6 @@
 function Interview() {
   return (
-    <div class="relative bg-red-600 min-h-screen ">
+    <div className="relative bg-red-600 min-h-screen ">
       <div className="fixed box-content bg-white w-full h-16 z-20">
       <img alt="interview" src="interview/arrow.svg" className="w-5 h-5 absolute left-10 top-5"/>
       <h1 className="absolute left-16 font-bold top-5">Interview</h1>
@@ -22,7 +22,7 @@ function Interview() {
     </div>
     <div className="flex flex-row-reverse items-center">
     <button className="bg-black hover:bg-red-500 text-white font-bold px-5 mt-0 mr-36 py-2.5 rounded-full">Register Now</button>
-    <span class="h-1 w-2/3 bg-white"></span>
+    <span className="h-1 w-2/3 bg-white"></span>
     </div>
     <div className="flex flex-row-reverse items-center">
       <img alt="interview" src="/interview/pic2.svg" className="h-80 w-80 mr-10  mt-10"/>
@@ -40,7 +40,7 @@ function Interview() {
     </div>
     <div className="flex flex-row items-center">
     <button className="bg-black hover:bg-red-500 text-white font-bold px-5 mt-0 ml-40 py-2.5 rounded-full">Register Now</button>
-    <span class="h-1 w-2/3 bg-white"></span>
+    <span className="h-1 w-2/3 bg-white"></span>
     </div>
     <div className="flex flex-row items-center">
       <img alt="interview" src="/interview/pic3.png" className=" h-80 w-80 ml-10 mt-10 "/>
@@ -58,7 +58,7 @@ function Interview() {
     </div>
     <div className="flex flex-row-reverse items-center">
     <button className="bg-black hover:bg-red-500 text-white font-bold px-5 mt-0 mr-36 py-2.5 mb-10 rounded-full">Register Now</button>
-    <span class="h-1 w-2/3 bg-white mb-10"></span>
+    <span className="h-1 w-2/3 bg-white mb-10"></span>
     </div>
     
   </div>
