@@ -22,7 +22,7 @@ const Talkshow = () => {
 
   useEffect(() => {
     fillState();
-  }, [talkshowData, today.getHours()]);
+  }, [today.getHours()]); 
   return (
     <main className="pt-40">
       <section>
@@ -39,9 +39,8 @@ const Talkshow = () => {
       <section className="flex flex-col gap-20 mt-10 ">
         {talkshowData.map((data, index) => {
           return (
-            <div className={`${active[index]?'':'lowest'}`}>
+            <div key={data.title} className={`${active[index]?'':'lowest'}`}>
               <CardOpen
-                key={data.title}
                 title={data.title}
                 image={data.image}
                 place={data.place}

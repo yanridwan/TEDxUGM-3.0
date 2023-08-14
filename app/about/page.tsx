@@ -4,6 +4,7 @@ function About() {
         <img
           src="/about/About TED.svg"
           className="absolute -z-20 h-64 w-70 mr-10 top-0 right-0 opacity-50 max-sm:hidden"
+          alt="about TED"
         />
         <h2 className="absolute bottom-0 left-0 -z-20 leading-tight font-outline-1 font-bold text-white text-[10rem] opacity-50 max-sm:hidden">
           About <br /> TEDx{" "}

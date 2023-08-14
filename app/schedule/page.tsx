@@ -21,7 +21,7 @@ export default function Schedule() {
 
     useEffect(()=>{
         fillState();
-    }, [schedules, today.getDate()]);
+    }, [today.getDate()]);
     
     return (
         <main className="relative">
