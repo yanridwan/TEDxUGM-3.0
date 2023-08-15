@@ -19,8 +19,8 @@ export default function Partnership() {
 
   return (
     <main>
-      <section className="md:mx-20 mx-5 mt-10">
-        <div className="mx-auto lg:w-1/2 text-center">
+      <section className="md:mx-20 mx-5 pt-10">
+        <div className="mx-auto lg:w-1/2 text-center pt-10">
           <h1 className="titleRed">OUR SPONSORS</h1>
           <p>
             We extend our heartfelt gratitude to our valued partners
@@ -90,7 +90,7 @@ export default function Partnership() {
         </div>
       </section>
       <section className="mt-20 md:mx-10 mx-5">
-        <div className="lg:w-1/2 lg:mx-auto md:mx-10 text-center">
+        <div className="lg:w-1/2 lg:mx-auto md:mx-10 text-center pb-10">
           <h1 className="titleRed">Be Our Support</h1>
           <p>
             Embrace the opportunity to align your compassion with action by
