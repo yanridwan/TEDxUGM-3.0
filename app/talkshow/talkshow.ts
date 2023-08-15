@@ -1,28 +1,28 @@
 import logo from '../../public/logoBlack.png';
 const talkshowData =[
     {
-        title:'Jimmy Fallon Talkshow',
+        title:'Global Enchantment, Homegrown Perfection',
         image:logo,
-        place:'UGM',
+        place:'Kopi Luwak Mataram, Jl. Palemwulung No.15, Banguntapan, Bantul, DIY',
         date:'2023-08-18 19:00:00',
-        time:'19.00 - 21.00 WIB',
-        desc:'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet v vLorem ipsum dolor sit amet Lorem ipsum dolor sit amet v vvLorem ipsum dolor sit ametv v Lorem ipsum dolor sit amet',
+        time:'19.00 - Selesai',
+        desc:'Acara ini akan membahas tentang perjalanan dalam membangun brand yang membawa nilai lokalitas mereka kepada masyarakat internasional, bersama dua local heroes yang luar biasa, yaitu: Gilang Syach Putra (Owner Kopi Luwak Mataram), dan Fabian Budi Putra (Owner Sate Ratu)',
     },
     {
-        title:'Jimmy Talkshow',
+        title:'Global Enchantment, Homegrown Perfection',
         image:logo,
-        place:'UGM',
-        date:'2023-09-22 19:00:00',
-        time:'TBA',
-        desc:'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet v vLorem ipsum dolor sit amet Lorem ipsum dolor sit amet v vvLorem ipsum dolor sit ametv v Lorem ipsum dolor sit amet',
+        place:'Kopi Luwak Mataram, Jl. Palemwulung No.15, Banguntapan, Bantul, DIY',
+        date:'2023-08-18 19:00:00',
+        time:'19.00 - Selesai',
+        desc:'Acara ini akan membahas tentang perjalanan dalam membangun brand yang membawa nilai lokalitas mereka kepada masyarakat internasional, bersama dua local heroes yang luar biasa, yaitu: Gilang Syach Putra (Owner Kopi Luwak Mataram), dan Fabian Budi Putra (Owner Sate Ratu)',
     },
     {
-        title:'Fallon Talkshow',
+        title:'Global Enchantment, Homegrown Perfection',
         image:logo,
-        place:'UGM',
-        date:'2023-10-28 19:00:00',
-        time:'TBA',
-        desc:'Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet v vLorem ipsum dolor sit amet Lorem ipsum dolor sit amet v vvLorem ipsum dolor sit ametv v Lorem ipsum dolor sit amet',
+        place:'Kopi Luwak Mataram, Jl. Palemwulung No.15, Banguntapan, Bantul, DIY',
+        date:'2023-08-18 19:00:00',
+        time:'19.00 - Selesai',
+        desc:'Acara ini akan membahas tentang perjalanan dalam membangun brand yang membawa nilai lokalitas mereka kepada masyarakat internasional, bersama dua local heroes yang luar biasa, yaitu: Gilang Syach Putra (Owner Kopi Luwak Mataram), dan Fabian Budi Putra (Owner Sate Ratu)',
     },
 ]
 
