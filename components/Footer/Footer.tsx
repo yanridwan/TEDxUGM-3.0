@@ -5,7 +5,8 @@ import TEDxLogo from 'public/images/homepage/TEDx UGM Logo White.png';
 import Tiktok from 'public/images/homepage/tiktok-logo.png';
 import Linkedin from 'public/images/homepage/linkedin-logo.png';
 import IG from 'public/images/homepage/ig-logo.png';
-
+import YT from 'public/youtube.svg';
+import WA from 'public/whatsapp.svg';
 const Footer: React.FC = () => {
   return (
     <footer className="absolute w-full bg-black text-white">
@@ -22,30 +23,42 @@ const Footer: React.FC = () => {
                   href="#"
                   className=" text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
                 >
-                  Talks
+                  Home
+                </Link>
+                <Link
+                  href="#"
+                  className=" text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
+                >
+                  Merchandise
                 </Link>
                 <Link
                   href="#"
                   className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base lg:mt-2"
                 >
-                  Merchandise
+                  About
                 </Link>
               </div>
               <div className="flex flex-col gap-1 max-w-[80px] sm:min-w-[200px] lg:min-w-[260px]">
                 <h2 className="font-bold text-sm mb-1 sm:text-lg lg:text-xl lg:mb-4">
-                  SPONSORHIP
+                  PARTNERSHIP
                 </h2>
                 <Link
                   href="#"
                   className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
                 >
-                  Our Supporter
+                  Our Sponsors
                 </Link>
                 <Link
                   href="#"
                   className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base lg:mt-2"
                 >
-                  Become Our Sponsorship
+                  Our Partners
+                </Link>
+                <Link
+                  href="#"
+                  className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base lg:mt-2"
+                >
+                  Support Us
                 </Link>
               </div>
             </div>
@@ -58,6 +71,12 @@ const Footer: React.FC = () => {
                 >
                   Main Event
                 </Link>
+                <Link
+                  href="#"
+                  className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
+                >
+                  Damarience
+                </Link>
               </div>
               <div className="flex flex-col">
                 <h2 className="font-bold text-sm mb-2 sm:text-lg lg:text-xl lg:mb-4">Pre-Events</h2>
@@ -67,41 +86,28 @@ const Footer: React.FC = () => {
                       href="#"
                       className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
                     >
-                      Pre-Event 1.0
+                      Mini Talkshow
                     </Link>
                     <Link
                       href="#"
                       className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
                     >
-                      Pre-Event 2.0
+                      Bike to TEDxUGM
                     </Link>
                     <Link
                       href="#"
                       className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
                     >
-                      Pre-Event 3.0
+                      Local Assets Documentary
+                    </Link>
+                    <Link
+                      href="#"
+                      className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
+                    >
+                      A Point of View
                     </Link>
                   </div>
-                  <div className="flex flex-col gap-2 lg:gap-4">
-                    <Link
-                      href="#"
-                      className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
-                    >
-                      Pre-Event 4.0
-                    </Link>
-                    <Link
-                      href="#"
-                      className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
-                    >
-                      Pre-Event 5.0
-                    </Link>
-                    <Link
-                      href="#"
-                      className="text-white/60 hover:text-white text-xs lg:text-xl sm:text-base"
-                    >
-                      Pre-Event 6.0
-                    </Link>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -112,8 +118,7 @@ const Footer: React.FC = () => {
               <h2 className="font-bold text-sm mb-2 sm:text-lg lg:text-xl lg:mb-4">Find Us On:</h2>
               <div className="flex gap-4 lg:gap-8">
                 <Image src={Linkedin} alt="" className="h-6 lg:h-10 w-auto"></Image>
-                <Image src={IG} alt="" className="h-6 w-auto lg:h-10"></Image>
-                <Image src={Tiktok} alt="" className="h-6 w-auto lg:h-10"></Image>
+                <Image src={YT} alt="" className="h-6 w-auto lg:h-10"></Image>
               </div>
             </div>
             <div className="flex flex-col">
@@ -121,7 +126,7 @@ const Footer: React.FC = () => {
                 Connect With Us:
               </h2>
               <div className="flex gap-4 lg:gap-8">
-                <Image src={Linkedin} alt="" className="h-6 w-auto lg:h-10"></Image>
+                <Image src={WA} alt="" className="h-6 w-auto lg:h-10"></Image>
                 <Image src={IG} alt="" className="h-6 w-auto lg:h-10"></Image>
                 <Image src={Tiktok} alt="" className="h-6 w-auto lg:h-10"></Image>
               </div>

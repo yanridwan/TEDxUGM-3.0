@@ -16,8 +16,8 @@ function TalkshowLayout({ children }: { children: React.ReactNode }) {
           className="w-25 h-10 absolute right-5 bottom-4"
         />
       </div>
-      <Image src={shine} alt='shine' className="absolute top-0 opacity-50"/>
-      <Image src={shine} alt='shine' className="absolute top-0 right-0 opacity-50 rotate-180"/>
+      <Image src={shine} alt='shine' className="absolute top-1/2 opacity-50"/>
+      <Image src={shine} alt='shine' className="absolute top-1/2 right-0 opacity-50 rotate-180"/>
       {children}
     </div>
   );

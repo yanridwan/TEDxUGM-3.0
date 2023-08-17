@@ -65,10 +65,10 @@ export default function Carousel() {
 
   const CarouselContents: any[] = [
     {
-      title: 'BUMN Leadership 101',
+      title: '[TEDxUGM 2023]',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
-      image: 'https://swiperjs.com/demos/images/nature-1.jpg',
+        'Global Enchantment, Homegrown Perfection Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+      image: '/preEvent.png',
     },
     {
       title: 'Traveloka 101',
@@ -148,7 +148,7 @@ export default function Carousel() {
         ))} */}
         {CarouselContents.map((item, index) => (
           <SwiperSlide key={index} className="shadow-sm transition-all ">
-            <img src={item.image} alt="img" className="rounded-t-lg sm:rounded-t-2xl lg:h-72 lg:rounded-t-[45px]" />
+            <img src={item.image} alt="img" className="rounded-md sm:rounded-xl lg:h-72 lg:rounded-none" />
 
             {activeIndex === index && (
               <div className='text-xs lg:text-lg pt-4 text-justify px-8 sm:text-base md:text-lg h-auto max-w-lg mx-auto lg:mt-6 xl:text-2xl xl:px-0 xl:mt-24'>
