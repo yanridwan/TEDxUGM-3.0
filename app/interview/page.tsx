@@ -10,7 +10,7 @@ function Interview() {
       <img alt="interview" src="/interview/pic1.svg" className=" h-80 w-80 ml-10 mt-10"/>
       <div>
       <h1 className="text-2xl text-white font-bold ml-10 mt-5 mb-3 ">Upcoming Tour de Frances</h1>
-      <h3 className=" text-white ml-10 mr-40 text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <h3 className=" text-white ml-10 mr-40 text-justify sm:w-1/2 xl:w-1/2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Sed earum, voluptate aliquid reiciendis minima nihil incidunt.
       Corporis beatae eos suscipit labore voluptatem nostrum eligendi natus
       quod dolor? Voluptatem, soluta corporis.</h3>
@@ -28,7 +28,7 @@ function Interview() {
       <img alt="interview" src="/interview/pic2.svg" className="h-80 w-80 mr-10  mt-10"/>
       <div>
       <h1 className=" text-2xl text-white font-bold ml-40 mb-3 ">Upcoming Tour de Frances</h1>
-      <h3 className=" text-white ml-40 mr-40 text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <h3 className=" text-white ml-40 mr-40 text-justify sm:w-1/2 xl:w-1/2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Sed earum, voluptate aliquid reiciendis minima nihil incidunt.
       Corporis beatae eos suscipit labore voluptatem nostrum eligendi natus
       quod dolor? Voluptatem, soluta corporis.</h3>
@@ -46,7 +46,7 @@ function Interview() {
       <img alt="interview" src="/interview/pic3.png" className=" h-80 w-80 ml-10 mt-10 "/>
       <div>
       <h1 className="text-2xl text-white font-bold ml-10 mt-5 mb-3 ">Upcoming Tour de Frances</h1>
-      <h3 className=" text-white ml-10 mr-40 text-justify ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <h3 className=" text-white ml-10 mr-40 text-justify sm:w-1/2 xl:w-1/2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Sed earum, voluptate aliquid reiciendis minima nihil incidunt.
       Corporis beatae eos suscipit labore voluptatem nostrum eligendi natus
       quod dolor? Voluptatem, soluta corporis.</h3>
