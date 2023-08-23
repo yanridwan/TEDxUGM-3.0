@@ -43,11 +43,7 @@ const HeroSection: React.FC = () => {
             Bawana
           </h1>
           <p className="z-20 text-sm font-extralight sm:text-lg md:max-w-4xl lg:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-            facilisis purus non turpis consectetur, non porttitor ante
-            consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet
-            eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.
-            Lorem ipsum dolor sit amet.
+            Damar highlights the significance of small actions and ideas in shaping lives and fostering a sustainable, harmonius, and peaceful environment and society.
           </p>
           <div className="flex flex-col z-20 gap-4 mt-4 mx-auto lg:mx-0 lg:flex-row lg:gap-8">
             <Link href="/register">
