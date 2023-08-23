@@ -2,7 +2,6 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -75,6 +74,24 @@ export default function Carousel() {
       description:
         'Nantikan Ke',
       image: '/cs.png',
+    },
+    {
+      title: '[Coming Soon]',
+      description:
+        'Nantikan Ke',
+      image: '/images/homepage/hero-1.jpg',
+    },
+    {
+      title: '[Coming Soon]',
+      description:
+        'Nantikan Ke',
+      image: '/images/homepage/hero-2.jpg',
+    },
+    {
+      title: '[Coming Soon]',
+      description:
+        'Nantikan Ke',
+      image: '/images/homepage/hero-3.jpg',
     },
     // {
     //   title: 'Telkomsel 101',
