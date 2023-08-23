@@ -21,38 +21,38 @@ import { EffectCoverflow, Navigation } from 'swiper/modules';
 //   'https://swiperjs.com/demos/images/nature-5.jpg',
 // ];
 
-const CarouselContents: any[] = [
-  {
-    title: 'BUMN Leadership 101',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
-    image: 'https://swiperjs.com/demos/images/nature-1.jpg',
-  },
-  {
-    title: 'Traveloka 101',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
-    image: 'https://swiperjs.com/demos/images/nature-2.jpg',
-  },
-  {
-    title: 'Telkomsel 101',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
-    image: 'https://swiperjs.com/demos/images/nature-3.jpg',
-  },
-  {
-    title: 'Blibli 101',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
-    image: 'https://swiperjs.com/demos/images/nature-4.jpg',
-  },
-  {
-    title: 'Shopee 101',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
-    image: 'https://swiperjs.com/demos/images/nature-5.jpg',
-  },
-];
+// const CarouselContents: any[] = [
+//   {
+//     title: 'BUMN Leadership 101',
+//     description:
+//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+//     image: 'https://swiperjs.com/demos/images/nature-1.jpg',
+//   },
+//   {
+//     title: 'Traveloka 101',
+//     description:
+//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+//     image: 'https://swiperjs.com/demos/images/nature-2.jpg',
+//   },
+//   {
+//     title: 'Telkomsel 101',
+//     description:
+//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+//     image: 'https://swiperjs.com/demos/images/nature-3.jpg',
+//   },
+//   {
+//     title: 'Blibli 101',
+//     description:
+//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+//     image: 'https://swiperjs.com/demos/images/nature-4.jpg',
+//   },
+//   {
+//     title: 'Shopee 101',
+//     description:
+//       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis purus non turpis consectetur, non porttitor ante consectetur. Pellentesque vel est et metus imperdiet rutrum laoreet eu eros. Aenean at tellus pellentesque, suscipit tellus sit amet.',
+//     image: 'https://swiperjs.com/demos/images/nature-5.jpg',
+//   },
+// ];
 export default function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
   // const CarouselContent: any[] = [
