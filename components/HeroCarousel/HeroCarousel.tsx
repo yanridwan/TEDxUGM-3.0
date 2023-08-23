@@ -2,10 +2,10 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
-import HeroImage0 from 'public/images/homepage/hero-image.png';
-import HeroImage1 from 'public/images/homepage/hero-1.jpg';
-import HeroImage2 from 'public/images/homepage/hero-2.jpg';
-import HeroImage3 from 'public/images/homepage/hero-3.jpg';
+import HeroImage0 from '../../public/images/homepage/hero-image.png';
+import HeroImage1 from '../../public/images/homepage/hero-1.jpg';
+import HeroImage2 from '../../public/images/homepage/hero-2.jpg';
+import HeroImage3 from '../../public/images/homepage/hero-3.jpg';
 import styling from './HeroCarousel.module.css';
 import {Autoplay} from 'swiper/modules';
 import './HeroCarousel.module.css'
