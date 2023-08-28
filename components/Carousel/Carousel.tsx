@@ -72,27 +72,27 @@ export default function Carousel() {
     {
       title: '[Coming Soon]',
       description:
-        'Nantikan Ke',
+        'Look forward to our next agenda',
       image: '/cs.png',
     },
-    {
-      title: '[Coming Soon]',
-      description:
-        'Nantikan Ke',
-      image: '/images/homepage/hero-1.jpg',
-    },
-    {
-      title: '[Coming Soon]',
-      description:
-        'Nantikan Ke',
-      image: '/images/homepage/hero-2.jpg',
-    },
-    {
-      title: '[Coming Soon]',
-      description:
-        'Nantikan Ke',
-      image: '/images/homepage/hero-3.jpg',
-    },
+    // {
+    //   title: '[Coming Soon]',
+    //   description:
+    //     'Nantikan Ke',
+    //   image: '/images/homepage/hero-1.jpg',
+    // },
+    // {
+    //   title: '[Coming Soon]',
+    //   description:
+    //     'Nantikan Ke',
+    //   image: '/images/homepage/hero-2.jpg',
+    // },
+    // {
+    //   title: '[Coming Soon]',
+    //   description:
+    //     'Nantikan Ke',
+    //   image: '/images/homepage/hero-3.jpg',
+    // },
     // {
     //   title: 'Telkomsel 101',
     //   description:
