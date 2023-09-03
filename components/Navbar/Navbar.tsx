@@ -31,9 +31,10 @@ const Navbar: React.FC<NavbarProps> = () => {
   const handleModalClose = () => {
     setModalOpen(false);
   }
+  
   console;
   return (
-    <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/homepage/background-pattern.png')] bg-white">
+    <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/homepage/background-pattern.png')] bg-white sticky top-0 z-50">
       <div className="px-10 py-4 flex justify-between">
         <Link href="/">
           <Image
