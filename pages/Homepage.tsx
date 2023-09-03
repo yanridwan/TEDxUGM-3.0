@@ -13,13 +13,25 @@ import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/css';
 
-
 const Homepage = () => {
   return (
     <div className="w-full h-auto">
       <HeroSection />
       <div className="mx-8 md:mx-16 mt-20 flex flex-col md:gap-24">
         <CarouselSection />
+
+        <div className="block mx-auto my-8 md:my-0">
+          <iframe
+            className="rounded-xl w-[80vw] h-[45vw] md:w-[90vw] md:h-[45vw] lg:w-[90vw] lg:h-[45vw] xl:w-[70vw]"
+            
+            src="https://www.youtube.com/embed/-T7s4YS0BmM?si=NzXoCGC4T0E8FCSc"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+
         <hr className="border-2 border-black/60" />
         <ViewEventSection />
         <CTASection />
@@ -43,7 +55,9 @@ const HeroSection: React.FC = () => {
             Bawana
           </h1>
           <p className="z-20 text-sm font-extralight sm:text-lg md:max-w-4xl lg:text-xl">
-            Damar highlights the significance of small actions and ideas in shaping lives and fostering a sustainable, harmonius, and peaceful environment and society.
+            Damar highlights the significance of small actions and ideas in
+            shaping lives and fostering a sustainable, harmonius, and peaceful
+            environment and society.
           </p>
           <div className="flex flex-col z-20 gap-4 mt-4 mx-auto lg:mx-0 lg:flex-row lg:gap-8">
             <Link href="/register">
