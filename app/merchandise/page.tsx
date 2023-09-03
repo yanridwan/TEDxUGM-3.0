@@ -7,9 +7,9 @@ export default function Merchandise() {
         <main className="relative w-full h-full bgMerch">
             <div className="absolute -z-20 w-full h-full max-md:hidden">
                 <h2 className="absolute -top-[calc(2vh+0.1em)] -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
-                <h2 className="absolute top-10 -left-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
-                <h2 className="absolute bottom-[calc(2vh+0.5em)] -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
-                <h2 className="absolute bottom-0 -left-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
+                <h2 className="absolute top-10 -left-[calc(10vw+2.7em)] layoutTitle">Merchandise</h2>
+                {/* <h2 className="absolute bottom-[calc(2vh+0.5em)] -right-[calc(10vw+2em)] layoutTitle">Merchandise</h2>
+                <h2 className="absolute bottom-0 -left-[calc(10vw+2em)] layoutTitle">Merchandise</h2> */}
             </div>
             <div>
             <section className="w-full text-center">
