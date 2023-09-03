@@ -1,12 +1,8 @@
+import merchs from "./merch"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Merchandise() {
-    const merchs: { name: string, image: string, price: number, desc: string }[] = []
-    for (let i = 0; i < 9; i++) {
-        merchs.push({
-            name: 'Sticker TEDxUGM', image: 'logoBlack.png', price: 10000 + i * 1000, desc: 'To fully support our TEDxUGM event, we have sticker merchandise everyone can buy that can spark conversations and make a statement wherever you go.'
-        })
-    }
     return (
         <main className="relative w-full h-full bgMerch">
             <div className="absolute -z-20 w-full h-full max-md:hidden">
@@ -31,11 +27,11 @@ export default function Merchandise() {
                             }
                         }}>
                             <div className="">
-                                <div className="merchCard border-black border bg-white rounded-3xl aspect-square px-2 flex items-center justify-center mb-2">
-                                    <img src={merch.image} alt={merch.name} />
+                                <div className="merchCard border-black border bg-white rounded-3xl aspect-square flex items-center justify-center mb-2">
+                                    <img src={merch.image} alt={merch.name} className="w-full h-full rounded-3xl"/>
                                 </div>
                                 <h2 className="font-bold text-lg">{merch.name}</h2>
-                                <p className="text-lg">{merch.price.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' })}</p>
+                                <p className="text-lg">{merch.price}</p>
                             </div>
                         </Link>
                     )) :

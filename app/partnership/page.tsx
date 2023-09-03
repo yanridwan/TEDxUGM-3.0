@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import sponsors from './sponsors';
-
+import medpart from './medpart';
+import Image from 'next/image';
 export default function Partnership() {
   const pics: { name: string; src: string }[] = [];
   const picsSec: { name: string; src: string }[] = [];
@@ -62,29 +63,13 @@ export default function Partnership() {
             in the success of this remarkable event
           </p>
         </div>
-        <div className="mt-10 p-5 bg-white max-md:flex flex-wrap flex-row justify-center md:grid md:grid-cols-5 gap-10 border-black border-4 rounded-xl items-center shadow-[rgba(0,0,15,0.5)_10px_10px_10px_5px]">
-          {sponsors.map((sponsor) => (
-            <img
+        <div className="mt-10 p-5 mx-auto max-md:flex flex-wrap flex-row place-items-center justify-center md:grid grid-cols-3 lg:grid-cols-4 gap-10 border-black border-4 rounded-xl items-center shadow-[rgba(0,0,15,0.5)_10px_10px_10px_5px]">
+          {medpart.map((medpart) => (
+            <Image
               className="max-md:max-w-[20%] max-sm:max-w-[40%] shrink"
-              src={sponsor.link}
-              key={sponsor.name}
-              alt={sponsor.name}
-            />
-          ))}
-          {sponsors.map((sponsor) => (
-            <img
-              className="max-md:max-w-[20%] max-sm:max-w-[40%] shrink"
-              src={sponsor.link}
-              key={sponsor.name}
-              alt={sponsor.name}
-            />
-          ))}
-          {sponsors.map((sponsor) => (
-            <img
-              className="max-md:max-w-[20%] max-sm:max-w-[40%] shrink"
-              src={sponsor.link}
-              key={sponsor.name}
-              alt={sponsor.name}
+              src={medpart.pic}
+              key={medpart.name}
+              alt={medpart.name}
             />
           ))}
         </div>
