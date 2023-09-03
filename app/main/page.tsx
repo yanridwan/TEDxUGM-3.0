@@ -51,7 +51,7 @@ function Main() {
       height={500}
       alt="Picture of the author"
     />
-    <div class="w-full h-full flex  justify-center items-center 
+    <div className="w-full h-full flex  justify-center items-center 
              bg-slate-50 backdrop-brightness-75">
       <img src="/main/bg1.svg" className="w-full h-full">
 
