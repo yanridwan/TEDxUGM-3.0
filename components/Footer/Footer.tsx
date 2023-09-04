@@ -117,8 +117,8 @@ const Footer: React.FC = () => {
             <div className="flex flex-col">
               <h2 className="font-bold text-sm mb-2 sm:text-lg lg:text-xl lg:mb-4">Find Us On:</h2>
               <div className="flex gap-4 lg:gap-8">
-                <Image src={Linkedin} alt="" className="h-6 lg:h-10 w-auto"></Image>
-                <Image src={YT} alt="" className="h-6 w-auto lg:h-10"></Image>
+                <Link href="https://www.linkedin.com/company/tedxugmyogyakarta/"><Image src={Linkedin} alt="" className="h-6 lg:h-10 w-auto"></Image></Link>
+                <Link href="https://youtube.com/@tedxugmyogyakarta?si=EVDcbevcQGhZEoag"><Image src={YT} alt="" className="h-6 w-auto lg:h-10"></Image></Link>
               </div>
             </div>
             <div className="flex flex-col">
@@ -126,9 +126,9 @@ const Footer: React.FC = () => {
                 Connect With Us:
               </h2>
               <div className="flex gap-4 lg:gap-8">
-                <Image src={WA} alt="" className="h-6 w-auto lg:h-10"></Image>
-                <Image src={IG} alt="" className="h-6 w-auto lg:h-10"></Image>
-                <Image src={Tiktok} alt="" className="h-6 w-auto lg:h-10"></Image>
+                <Link href="https://wa.me/6282327776106"><Image src={WA} alt="" className="h-6 w-auto lg:h-10"></Image></Link>
+                <Link href="https://www.instagram.com/tedxugm/"><Image src={IG} alt="" className="h-6 w-auto lg:h-10"></Image></Link>
+                <Link href="https://www.tiktok.com/@tedxugm?is_from_webapp=1&sender_device=pc"><Image src={Tiktok} alt="" className="h-6 w-auto lg:h-10"></Image></Link>
               </div>
             </div>
           </div>
