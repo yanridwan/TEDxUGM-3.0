@@ -1,4 +1,4 @@
-import Button from "@/components/Button/Button";
+import Button from '@/components/Button/Button';
 
 function Main() {
   return (
@@ -78,13 +78,11 @@ export default Main;
 
 const FormSection = () => {
   return (
-    <div>
-      <div className="w-full h-screen bg-[url('/main/bg1.svg')] pt-10">
-        <div className="w-full h-1/3 bg-[#F4E7E7] flex flex-col justify-center items-center p-10 gap-4">
+    <div className="w-full h-auto py-12 bg-[url('/main/bg1.svg')]">
+      <div className="h-auto xl:max-w-full xl:mx-auto">
+        <div className="w-full h-1/3 bg-[#F4E7E7] flex flex-col justify-center items-center p-6 gap-4 lg:flex-row lg:justify-around xl:justify-center xl:gap-56">
           <svg
-            className="w-64"
-            width="334"
-            height="291"
+            className="w-28 h-auto sm:w-36 lg:w-48"
             viewBox="0 0 334 291"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -118,33 +116,45 @@ const FormSection = () => {
             />
           </svg>
 
-          <p className="text-sm text-center italic">
+          <p className="text-sm text-center italic sm:max-w-md sm:text-lg font-light lg:text-left">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
 
-        <div className="w-full p-10 flex flex-col justify-center items-center gap-8">
-          <h2 className="font-bold text-2xl text-center">
-            Don't miss out on any TEDxUGM news and updates!
-          </h2>
-          <InputFormLine
-            name="firstName"
-            type="text"
-            placeholder="First Name"
-          />
-          <InputFormLine
-            name="lastName"
-            type="text"
-            placeholder="Last Name"
-          />
-          <InputFormLine
-            name="email"
-            type="email"
-            placeholder="Email Adress"
-          />
+        <div className="w-full p-10 flex flex-col justify-center items-center gap-8 sm:max-w-xl mx-auto lg:flex-row lg:max-w-full lg:mx-0 lg:justify-around xl:justify-center xl:gap-56">
+          {/* <div className='w-1/3 h-20 bg-blue-200'></div>
+          <div className='w-1/3 h-20 bg-red-200'></div> */}
+          <div className="flex w-full lg:w-48 mb-12">
+            <h2 className="font-bold text-2xl sm:text-3xl text-center lg:text-left lg:text-4xl lg:max-w-md lg:leading-normal w-full">
+              Don't miss out on any TEDxUGM news and updates!
+            </h2>
+          </div>
 
-          
+          <form className="w-full gap-8 flex flex-col sm:text-lg items-center lg:w-[448px]">
+            <InputFormLine
+              name="firstName"
+              type="text"
+              placeholder="First Name"
+            />
+            <InputFormLine
+              name="lastName"
+              type="text"
+              placeholder="Last Name"
+            />
+            <InputFormLine
+              name="email"
+              type="email"
+              placeholder="Email Adress"
+            />
+
+            <Button
+              type="submit"
+              text="JOIN THE MAILING LIST"
+              variant="primary"
+              className="mx-auto hover:scale-105 transition-all drop-shadow-xl w-64 font-semibold h-10 mt-6 lg:h-14 lg:w-72"
+            />
+          </form>
         </div>
       </div>
     </div>
@@ -159,14 +169,13 @@ interface InputFormProps {
 
 const InputFormLine: React.FC<InputFormProps> = ({
   name,
-
   type,
   placeholder,
 }) => {
   return (
-    <div className="italic text-lg font-light w-full">
+    <div className="italic text-lg font-light w-full lg:text-2xl">
       <input
-        className="placeholder-black focus:outline-none bg-transparent"
+        className="placeholder-black focus:outline-none bg-transparent lg:pb-2"
         name={name}
         type={type}
         placeholder={placeholder}
