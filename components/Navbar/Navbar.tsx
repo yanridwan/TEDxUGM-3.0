@@ -30,8 +30,8 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   const handleModalClose = () => {
     setModalOpen(false);
-  }
-  
+  };
+
   console;
   return (
     <nav className="font-bold text-xs lg:text-sm shadow-md object-cover w-full bg-[url('/images/homepage/background-pattern.png')] bg-white sticky top-0 z-50">
@@ -116,20 +116,24 @@ const Navbar: React.FC<NavbarProps> = () => {
                     </div>
                     <hr className="border-t border-black border-[0.5px] border-b-0 mx-4 " />
                     <div className="px-6 py-1 hover:bg-black">
-                      <Link href="/documentaries">“The Local Assets” Documentaries</Link>
+                      <Link href="/documentaries">
+                        “The Local Assets” Documentaries
+                      </Link>
                     </div>
                     <hr className="border-t border-black border-[0.5px] border-b-0 mx-4" />
                     <div className="px-6 pt-1 pb-2 hover:bg-black">
-                      <Link href="/interview">“A Point Of View” Interviews</Link>
+                      <Link href="/interview">
+                        “A Point Of View” Interviews
+                      </Link>
                     </div>
                   </div>
                 </div>
               )}
             </li>
             <li className="flex justify-center">
-              <a className="hover:text-c-red transition-all" href="#">
+              <Link className="hover:text-c-red transition-all" href="/main">
                 MAIN EVENTS
-              </a>
+              </Link>
             </li>
             <li>
               <Link
@@ -140,7 +144,10 @@ const Navbar: React.FC<NavbarProps> = () => {
               </Link>
             </li>
             <li>
-              <Link className="hover:text-c-red transition-all" href="/partnership">
+              <Link
+                className="hover:text-c-red transition-all"
+                href="/partnership"
+              >
                 PARTNERSHIP
               </Link>
             </li>
@@ -200,16 +207,20 @@ const Navbar: React.FC<NavbarProps> = () => {
               )}
             </li>
             <li>
-              <div onClick={()=>{setModalOpen(true)}}>
+              <div
+                onClick={() => {
+                  setModalOpen(true);
+                }}
+              >
                 <Button
                   variant="primary"
                   text="SIGN IN"
                   className="md:w-24 lg:w-40 hover:scale-105 transition-transform"
                 />
               </div>
-              
+
               <div className="relative">
-                  <ModalLogin onClose={handleModalClose} open={openModal} />
+                <ModalLogin onClose={handleModalClose} open={openModal} />
               </div>
             </li>
           </ul>
@@ -258,9 +269,9 @@ const Navbar: React.FC<NavbarProps> = () => {
               </svg>
             </div>
             <li className="flex justify-center">
-              <a className="hover:text-c-red transition-all" href="#">
+              <Link className="hover:text-c-red transition-all" href="/main">
                 MAIN EVENTS
-              </a>
+              </Link>
               <hr className="border-t border-black border-[0.5px] border-b-0" />
             </li>
 
