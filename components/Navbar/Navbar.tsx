@@ -108,19 +108,19 @@ const Navbar: React.FC<NavbarProps> = () => {
                 <div className="absolute bg-c-red w-auto h-auto top-14 rounded-lg text-base text-white flex flex-col font-normal  overflow-hidden gap-1 z-50">
                   <div className="overflow-hidden flex flex-col">
                     <div className="px-6 pt-2 pb-1 hover:bg-black">
-                      <Link href="/talkshow">Talk Show Road To TEDxUGM</Link>
+                      <Link href="#">Talk Show Road To TEDxUGM</Link>
                     </div>
                     <hr className="border-t border-black border-[0.5px] border-b-0 mx-4" />
                     <div className="px-6 py-1 hover:bg-black">
-                      <Link href="/cycling">Bike To TEDxUGM</Link>
+                      <Link href="#">Bike To TEDxUGM</Link>
                     </div>
                     <hr className="border-t border-black border-[0.5px] border-b-0 mx-4 " />
                     <div className="px-6 py-1 hover:bg-black">
-                      <Link href="/documentaries">“The Local Assets” Documentaries</Link>
+                      <Link href="#">“The Local Assets” Documentaries</Link>
                     </div>
                     <hr className="border-t border-black border-[0.5px] border-b-0 mx-4" />
                     <div className="px-6 pt-1 pb-2 hover:bg-black">
-                      <Link href="/interview">“A Point Of View” Interviews</Link>
+                      <Link href="#">“A Point Of View” Interviews</Link>
                     </div>
                   </div>
                 </div>

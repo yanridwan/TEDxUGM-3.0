@@ -15,15 +15,7 @@ function About() {
             About <br className="max-md:hidden"/> TED{" "}
           </h1>
           <p className="text-black text-xl text-justify lg:w-[40%] md:w-1/2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            dolor risus, ultricies sit amet pretium eget, posuere non enim.
-            Maecenas fringilla quam sed lorem convallis, ac dignissim erat
-            scelerisque. Mauris dui ligula, pellentesque a nisl a, scelerisque
-            faucibus nunc. Nullam porta pretium nulla, laoreet vestibulum lorem
-            gravida sed. Fusce porttitor eros turpis, quis luctus mi sagittis id.
-            Praesent mi metus, faucibus ac metus mollis, vulputate elementum odio.
-            Nullam vel tempus turpis, sed porttitor nibh. Nulla cursus elit vitae
-            bibendum tristique.
+            TED is a platform dedicated to researching, finding fresh ideas, and sharing knowledge that matters. TED is devoted to curiosity, reason, eagerness and the pursuit of knowledge with the mission to discover and spread ideas that ignite imagination, embrace possibility, and catalyze impact. TED welcome people, from every background of culture, who seek knowledge and has the desire to discover a deeper understanding of the world by inviting everyone to engage with ideas and initiate them in our community.
           </p>
         </div>
         <p></p>
