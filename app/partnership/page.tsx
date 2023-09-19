@@ -20,7 +20,7 @@ export default function Partnership() {
 
   return (
     <main>
-      <section className="md:mx-20 mx-5 pt-10">
+      <section className="md:mx-40 mx-5 pt-10">
         {/* <div className="mx-auto lg:w-1/2 text-center pt-10">
           <h1 className="titleRed">OUR SPONSORS</h1>
           <p>
@@ -82,7 +82,7 @@ export default function Partnership() {
             joining our support, where your contribution can amplify our efforts
             to elevate our organization.
           </p>
-          <Link href="#">
+          <Link href="https://wa.me/6285833333833" target='_blank'>
             <button className="buttonRed mt-5">Support Us</button>
           </Link>
         </div>

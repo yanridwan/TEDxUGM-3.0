@@ -27,9 +27,9 @@ export default function Merchandise() {
                             }
                         }}>
                             <div className="">
-                                <div className="merchCard border-black border bg-white rounded-3xl aspect-square flex items-center justify-center mb-2">
+                                <div className="merchCard border-black border-2 bg-white rounded-3xl aspect-square flex items-center justify-center mb-2">
                                     <img src={merch.image} alt={merch.name} className="w-full h-full rounded-3xl"/>
-                                </div>
+                                </div>  
                                 <h2 className="font-bold text-lg">{merch.name}</h2>
                                 <p className="text-lg">{merch.price}</p>
                             </div>
