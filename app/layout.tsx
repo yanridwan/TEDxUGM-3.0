@@ -1,6 +1,8 @@
 'use client';
 import './globals.css';
 import { Inter } from 'next/font/google';
+import { Anton } from 'next/font/google';
+import { Alegreya } from 'next/font/google';
 import React, { useState } from 'react';
 import { metadata } from './metadata.ts';
 import Navbar from '@/components/Navbar/Navbar';

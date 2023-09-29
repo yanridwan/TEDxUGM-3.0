@@ -13,6 +13,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        anton:['Anton', 'sans-serif'],
+        alegreya:['Alegreya', 'sans-serif'],
       },
       colors:{
         'redTED':'#FF0000',

@@ -10,8 +10,8 @@ export default function ComingSoon() {
         <Image src={awan} alt="awan" className="" />
         <Image src={podium} alt="podium" className="max-sm:hidden" />
         <div className='absolute flex justify-center flex-col items-center text-white'>
-            <h1 className='text-[calc(2rem+4vw)] font-extrabold italic font-mono'>COMING SOON</h1>
-            <p className=' font-serif text-[calc(1rem+2vw)]'>STAY TUNED</p>
+            <h1 className='text-[calc(2rem+2.7vw)] font-extrabold italic font-alegreya text-center'>COMING SOON</h1>
+            <p className=' font-anton text-[calc(1rem+2vw)]'>STAY TUNED</p>
         </div>
       </div>
     </main>
