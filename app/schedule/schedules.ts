@@ -5,17 +5,17 @@ const schedules=[
         description:'In this project, we made a mural painting based on the correlation of Damar with Yogyakarta’s culture. Collaborating with the marvelous Saidaka, we will take you on a journey through our visual Klinik Seni that illustrate the pivotal role of the youth’s spirit in protecting Yogyakarta’s legacy.'
     },
     {
-        date:'2023-08-18',
+        date:'2023-08-17',
         title:'TALKSHOW LOCAL HEROES MOVEMENT',
         description:'With the spirit of "Damar" driving us, we collaborate with extraordinary entrepreneurial heroes offering products and services in Yogyakarta. We aim to provide fresh insights, experiences, and wisdom from these unique businesses and unravel their true aspirations on building Yogyakarta’s most iconic places.'
     },
     {
-        date:'2023-09-03',
+        date:'2023-09-10',
         title:'A POINT OF VIEW PROJECT #1',
         description:'<b>Breaking Barriers: Pursuing Education Against All Odds</b> <br/> Meet two resilient students pursuing their dreams despite life\'s challenges. Indri, a dedicated mother and S2 student, balances her roles with unwavering determination to continue her education. On the other hand, Refi, the daughter of a farmer, initially let go of her dream to study but found the courage to pursue higher education, ultimately achieving a full scholarship.'
     },
     {
-        date:'2023-09-10',
+        date:'2023-09-25',
         title:'A POINT OF VIEW PROJECT #2',
         description:'<b>High-Achievers: Uniqueness and Their Endeavors</b> <br/> Discover the extraordinary lives of UGM\'s 2023 high-achieving students. Learn how they manage their busy schedules, academics, and personal lives. We\'ll also delve into the lesser-known aspects, exploring moments of imperfection like late submissions or skipped classes. Their daily routines and academic experiences will leave you inspired.'
     },
@@ -30,14 +30,14 @@ const schedules=[
         description:'<b>Empowering Studentpreneurship</b>: Meet Catur and Aqilah, two talented students from S2 and S1, respectively, who have ventured into various business ventures. In this campaign, we\'ll unveil their entrepreneurial journey, from ideation to execution. Gain valuable insights on how they built their businesses, garnered support from their surroundings, and balanced academics with entrepreneurship.'
     },
     {
-        date:'2023-10-08',
-        title:'THE LOCAL ASSETS CULTURAL PROJECT DOCUMENTARY',
-        description:'In this project, we unfold the story behind a Kraton dancer named Anggun, who will take you on a journey showcasing the rich culture and philosophy behind a harmonious choreography of a Kraton traditonal dance. We will discuss about the importance of keeping our culture and  legacy alive for the future generation.'
-    },
-    {
         date:'2023-10-28',
         title:'TALKSHOW SUSTAINABILITY INDUSTRY',
         description:'By embracing the theme “Memayu Hayuning Bawana” that translates to bring prosperity to the world, we want to create awareness about the significance of sustainability lifestyle in enhancing environmental stability. We collaborate with unique entrepreneurs who dives deep into their career to create a sustainable business.'
+    },
+    {
+        date:'2023-10-29',
+        title:'THE LOCAL ASSETS CULTURAL PROJECT DOCUMENTARY',
+        description:'In this project, we unfold the story behind a Kraton dancer named Anggun, who will take you on a journey showcasing the rich culture and philosophy behind a harmonious choreography of a Kraton traditonal dance. We will discuss about the importance of keeping our culture and  legacy alive for the future generation.'
     },
     {
         date:'2023-11-18',
