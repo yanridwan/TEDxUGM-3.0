@@ -29,7 +29,7 @@ export default function Partnership() {
             in the success of this remarkable event
           </p>
         </div>
-        <div className="mt-10 p-5 bg-white max-md:flex flex-wrap flex-row justify-center md:grid md:grid-cols-5 gap-10 border-black border-3 rounded-xl items-center shadow-[rgba(0,0,15,0.3)_10px_10px_10px_5px]">
+        <div className="mt-10 p-12 bg-white max-md:flex flex-wrap flex-row justify-center md:grid md:grid-cols-5 gap-10 border-black border-3 rounded-xl items-center shadow-[rgba(0,0,15,0.3)_10px_10px_10px_5px]">
           {sponsors.map((sponsor) => (
             <Image
               className="max-md:max-w-[20%] max-sm:max-w-[40%] shrink"
