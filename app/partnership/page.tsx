@@ -21,7 +21,7 @@ export default function Partnership() {
   return (
     <main>
       <section className="md:mx-40 mx-5 pt-10">
-        {/* <div className="mx-auto lg:w-1/2 text-center pt-10">
+        <div className="mx-auto lg:w-1/2 text-center pt-10">
           <h1 className="titleRed">OUR SPONSORS</h1>
           <p>
             We extend our heartfelt gratitude to our valued partners
@@ -31,30 +31,14 @@ export default function Partnership() {
         </div>
         <div className="mt-10 p-5 bg-white max-md:flex flex-wrap flex-row justify-center md:grid md:grid-cols-5 gap-10 border-black border-3 rounded-xl items-center shadow-[rgba(0,0,15,0.3)_10px_10px_10px_5px]">
           {sponsors.map((sponsor) => (
-            <img
+            <Image
               className="max-md:max-w-[20%] max-sm:max-w-[40%] shrink"
-              src={sponsor.link}
+              src={sponsor.pic}
               key={sponsor.name}
               alt={sponsor.name}
             />
           ))}
-          {sponsors.map((sponsor) => (
-            <img
-              className="max-md:max-w-[20%] max-sm:max-w-[40%] shrink"
-              src={sponsor.link}
-              key={sponsor.name}
-              alt={sponsor.name}
-            />
-          ))}
-          {sponsors.map((sponsor) => (
-            <img
-              className="max-md:max-w-[20%] max-sm:max-w-[40%] shrink"
-              src={sponsor.link}
-              key={sponsor.name}
-              alt={sponsor.name}
-            />
-          ))}
-        </div> */}
+        </div>
         <div className="mx-auto mt-20 lg:w-1/2 text-center">
           <h1 className="titleRed">OUR PARTNERS</h1>
           <p>
