@@ -12,10 +12,12 @@ export default function Page({ params, searchParams }: { params: { merch: string
                 <div className="flex flex-col gap-1 md:w-[calc(30%+5rem)]">
                     <h1 className="text-black font-bold text-3xl">{productName}</h1>
                     <h1 className="font-bold text-redTED text-xl">{searchParams.price}</h1>
-                    <p className="text-justify">{searchParams.description}</p>
-                    <div className="mt-5 flex justify-center">
-                        <button className="buttonRed text-center">BUY NOW</button>
-                    </div>
+                        <p className="text-justify">{searchParams.description}</p>
+                        <a href="https://linktr.ee/merchtedxugm">
+                            <div className="mt-5 flex justify-center">
+                                <button className="buttonRed text-center">BUY NOW</button>
+                            </div>
+                        </a>
                 </div>
                 </div>
             </section>
