@@ -127,7 +127,7 @@ const Navbar: React.FC<NavbarProps> = () => {
               )}
             </li>
             <li className="flex justify-center">
-              <a className="hover:text-c-red transition-all" href="#">
+              <a className="hover:text-c-red transition-all" href="/comingsoon">
                 MAIN EVENTS
               </a>
             </li>
