@@ -1,19 +1,11 @@
+"use client";
+import { useState } from "react";
 import Image from 'next/image';
 import bgPreEvent from 'public/bgPreEvent.png';
-import recap1 from 'public/recap-talkshow/recap1.png';
-import recap2 from 'public/recap-talkshow/recap2.png';
-import recap3 from 'public/recap-talkshow/recap3.png';
-import recap4 from 'public/recap-talkshow/recap4.png';
-import recap5 from 'public/recap-talkshow/recap5.png';
-import recap6 from 'public/recap-talkshow/recap6.png';
-import recap7 from 'public/recap-talkshow/recap7.png';
-import recap8 from 'public/recap-talkshow/recap8.png';
-import recap9 from 'public/recap-talkshow/recap9.png';
-import recap10 from 'public/recap-talkshow/recap10.png';
-import recap11 from 'public/recap-talkshow/recap11.png';
-import recap12 from 'public/recap-talkshow/recap12.png';
 
 function RecapTalkshow() {
+  const [openTab, setOpenTab] = useState(1);
+
   return (
     <div className="bg-grey min-h-screen text-white">
       <div className="relative">
@@ -29,26 +21,46 @@ function RecapTalkshow() {
           support and collaboration played a pivotal role in the success of this remarkable<br/>
           event
         </p>
-        <div className="flex flex-row justify-between py-8 gap-6 items-center">
-          <h2 className="text-redTED font-bold text-3xl">#1</h2>
+        <div className="flex flex-row justify-between py-8 gap-2 items-center">
+          <button className={"font-bold text-3xl px-4 py-2 rounded-lg  transform ease-out duration-300 " + 
+            (openTab === 1 ? "text-redTED hover:bg-white": "hover:bg-redTED")}
+            onClick={() => setOpenTab(1)}>#1</button>
           <div className="bg-white h-10 w-[0.1rem]"></div>
-          <h2 className="font-bold text-3xl">#2</h2>
+          <button className={"font-bold text-3xl px-4 py-2 rounded-lg  transform ease-out duration-300 " + 
+            (openTab === 2 ? "text-redTED hover:bg-white": "hover:bg-redTED")}
+            onClick={() => setOpenTab(2)}>#2</button>
           <div className="bg-white h-10 w-[0.1rem]"></div>
-          <h2 className="font-bold text-3xl">#3</h2>
+          <button className={"font-bold text-3xl px-4 py-2 rounded-lg  transform ease-out duration-300 " + 
+            (openTab === 3 ? "text-redTED hover:bg-white": "hover:bg-redTED")}
+            onClick={() => setOpenTab(3)}>#3</button>
         </div>
-        <div className="grid grid-cols-4 grid-rows-4 gap-2 w-full">
-          <Image src={recap1} alt="" className="w-full h-full"/>
-          <Image src={recap2} alt="" className="w-full h-full row-span-2"/>
-          <Image src={recap3} alt="" className="w-full h-full"/>
-          <Image src={recap4} alt="" className="w-full h-full"/>
-          <Image src={recap5} alt="" className="w-full h-full row-span-2"/>
-          <Image src={recap6} alt="" className="w-full h-full row-span-2"/>
-          <Image src={recap7} alt="" className="w-full h-full"/>
-          <Image src={recap8} alt="" className="w-full h-full row-span-2"/>
-          <Image src={recap9} alt="" className="w-full h-full"/>
-          <Image src={recap10} alt="" className="w-full h-full"/>
-          <Image src={recap11} alt="" className="w-full h-full"/>
-          <Image src={recap12} alt="" className="w-full h-full"/>
+        <div className={"grid grid-cols-4 grid-rows-4 gap-2 w-full " + (openTab === 1 ? "block" : "hidden")}>
+          <Image src="/recap-talkshow/1-1.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/1-2.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2"/>
+          <Image src="/recap-talkshow/1-3.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/1-4.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/1-5.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2"/>
+          <Image src="/recap-talkshow/1-6.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2"/>
+          <Image src="/recap-talkshow/1-7.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/1-8.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2"/>
+          <Image src="/recap-talkshow/1-9.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/1-10.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/1-11.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/1-12.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+        </div>
+        <div className={"grid grid-cols-4 grid-rows-4 gap-2 w-full " + (openTab === 2 ? "block" : "hidden")}>
+          <Image src="/recap-talkshow/2-1.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2"/>
+          <Image src="/recap-talkshow/2-2.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/2-3.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2"/>
+          <Image src="/recap-talkshow/2-4.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/2-5.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/2-6.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2"/>
+          <Image src="/recap-talkshow/2-7.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/2-8.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2"/>
+          <Image src="/recap-talkshow/2-9.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/2-10.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/2-11.png" width={1000} height={1000} alt="" className="w-full h-full"/>
+          <Image src="/recap-talkshow/2-12.png" width={1000} height={1000} alt="" className="w-full h-full"/>
         </div>
       </div>
       <div className="flex flex-col items-center text-white mx-36 pt-16 pb-8">
