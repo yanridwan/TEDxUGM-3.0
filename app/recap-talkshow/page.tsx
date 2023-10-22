@@ -62,6 +62,20 @@ function RecapTalkshow() {
           <Image src="/recap-talkshow/2-11.png" width={1000} height={1000} alt="" className="w-full h-full"/>
           <Image src="/recap-talkshow/2-12.png" width={1000} height={1000} alt="" className="w-full h-full"/>
         </div>
+        <div className={"grid grid-cols-4 grid-rows-4 gap-2 w-full " + (openTab === 3 ? "block" : "hidden")}>
+          <Image src="/recap-talkshow/2-1.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2" />
+          <Image src="/recap-talkshow/2-2.png" width={1000} height={1000} alt="" className="w-full h-full" />
+          <Image src="/recap-talkshow/2-3.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2" />
+          <Image src="/recap-talkshow/2-4.png" width={1000} height={1000} alt="" className="w-full h-full" />
+          <Image src="/recap-talkshow/2-5.png" width={1000} height={1000} alt="" className="w-full h-full" />
+          <Image src="/recap-talkshow/2-6.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2" />
+          <Image src="/recap-talkshow/2-7.png" width={1000} height={1000} alt="" className="w-full h-full" />
+          <Image src="/recap-talkshow/2-8.png" width={1000} height={1000} alt="" className="w-full h-full row-span-2" />
+          <Image src="/recap-talkshow/2-9.png" width={1000} height={1000} alt="" className="w-full h-full" />
+          <Image src="/recap-talkshow/2-10.png" width={1000} height={1000} alt="" className="w-full h-full" />
+          <Image src="/recap-talkshow/2-11.png" width={1000} height={1000} alt="" className="w-full h-full" />
+          <Image src="/recap-talkshow/2-12.png" width={1000} height={1000} alt="" className="w-full h-full" />
+        </div>
       </div>
       <div className="flex flex-col items-center text-white mx-36 pt-16 pb-8">
         <h2 className="text-redTED font-bold text-4xl">After Movie Talkshow #1</h2>
