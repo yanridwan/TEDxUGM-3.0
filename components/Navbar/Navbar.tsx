@@ -200,13 +200,15 @@ const Navbar: React.FC<NavbarProps> = () => {
               )}
             </li>
             <li>
-              <div onClick={()=>{setModalOpen(true)}}>
+              {/* <div onClick={()=>{setModalOpen(true)}}> */}
+              <Link href="https://artatix.co.id/event/tedxugm-2023">
                 <Button
                   variant="primary"
-                  text="SIGN IN"
+                  text="Buy Ticket"
                   className="md:w-24 lg:w-40 hover:scale-105 transition-transform"
                 />
-              </div>
+              </Link>
+              {/* </div> */}
               
               <div className="relative">
                   <ModalLogin onClose={handleModalClose} open={openModal} />

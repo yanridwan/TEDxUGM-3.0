@@ -61,9 +61,9 @@ const HeroSection: React.FC = () => {
             environment and society.
           </p>
           <div className="flex flex-col z-20 gap-4 mt-4 mx-auto lg:mx-0 lg:flex-row lg:gap-8">
-            <Link href="/register">
+            <Link href="https://artatix.co.id/event/tedxugm-2023">
               <Button
-                text="Register Now"
+                text="Main Event"
                 variant="primary"
                 className="w-56 md:w-64 hover:scale-110 transition-transform lg:text-xl"
               />
