@@ -17,9 +17,9 @@ function RecapTalkshow() {
       <div className="flex flex-col items-center mx-40">
         <h2 className="text-redTED font-bold text-4xl">Recap Talkshow</h2>
         <p className="text-2xl text-center pt-2">
-          We extend our heartfelt gratitude to our valued partners contribution, whose<br/>
-          support and collaboration played a pivotal role in the success of this remarkable<br/>
-          event
+          The TEDxUGM talk show recap presents a variety of inspiring thoughts and innovative ideas, <br />
+          highlighting deep insights from speakers who have succeeded<br />
+          in redefining paradigms in various areas of life.
         </p>
         <div className="flex flex-row justify-between py-8 gap-2 items-center">
           <button className={"font-bold text-3xl px-4 py-2 rounded-lg  transform ease-out duration-300 " + 
@@ -96,8 +96,8 @@ function RecapTalkshow() {
         </div>
         <button className="bg-redTED py-1 px-3 rounded-full text-center text-xl font-bold">See Full On Youtube</button>
       </div>
-      <div className="flex flex-col gap-10 mx-40 pb-48">
-        <div className="flex flex-row gap-4">
+      <div className="flex flex-col gap-10 mx-40 pb-48 pt-20">
+        <div className="flex flex-row gap-4 pb-38">
           <div className="flex flex-col w-1/2">
             <p className="text-redTED font-bold text-xl pb-2">Talkshow #1</p>
             <h2 className="font-bold text-4xl">GLOBAL ENCHANTMENT,<br/>HOMEGROWN PERFECTION</h2>
